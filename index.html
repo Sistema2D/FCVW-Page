@@ -358,8 +358,8 @@
     </a>
     <a href="docs.html"
        class="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-container text-on-primary-container hover:text-white rounded-xl shadow-lg hover:shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
-      <span class="material-symbols-outlined">menu_book</span>
-      <span data-i18n="cta_docs">Documentação</span>
+      <span class="material-symbols-outlined">account_tree</span>
+      <span data-i18n="cta_docs">Pipeline</span>
     </a>
   </div>
 
@@ -607,6 +607,7 @@
       <div class="flex items-center gap-base p-sm px-md hover:bg-surface-variant/20 transition-colors"><button class="view-file-btn text-on-surface-variant hover:text-primary transition-all p-1 hover:scale-110 active:scale-95 flex items-center justify-center shrink-0 cursor-pointer" data-file="SCOPE.md" aria-label="Visualizar SCOPE.md"><span class="material-symbols-outlined text-[18px]">visibility</span></button><span class="material-symbols-outlined text-secondary text-sm">description</span><span class="font-semibold shrink-0">SCOPE.md</span><span class="text-xs text-on-surface-variant ml-auto text-right" data-i18n="file_scope_desc">Limites formais do projeto</span></div>
       <div class="flex items-center gap-base p-sm px-md hover:bg-surface-variant/20 transition-colors"><button class="view-file-btn text-on-surface-variant hover:text-primary transition-all p-1 hover:scale-110 active:scale-95 flex items-center justify-center shrink-0 cursor-pointer" data-file="STACK.md" aria-label="Visualizar STACK.md"><span class="material-symbols-outlined text-[18px]">visibility</span></button><span class="material-symbols-outlined text-secondary text-sm">description</span><span class="font-semibold shrink-0">STACK.md</span><span class="text-xs text-on-surface-variant ml-auto text-right" data-i18n="file_stack_desc">Stack tecnológica e ferramentas aprovadas</span></div>
       <div class="flex items-center gap-base p-sm px-md hover:bg-surface-variant/20 transition-colors"><button class="view-file-btn text-on-surface-variant hover:text-primary transition-all p-1 hover:scale-110 active:scale-95 flex items-center justify-center shrink-0 cursor-pointer" data-file="PLANNING.md" aria-label="Visualizar PLANNING.md"><span class="material-symbols-outlined text-[18px]">visibility</span></button><span class="material-symbols-outlined text-secondary text-sm">description</span><span class="font-semibold shrink-0">PLANNING.md</span><span class="text-xs text-on-surface-variant ml-auto text-right" data-i18n="file_planning_desc">Metodologia obrigatória de planos</span></div>
+      <div class="flex items-center gap-base p-sm px-md hover:bg-surface-variant/20 transition-colors"><button class="view-file-btn text-on-surface-variant hover:text-primary transition-all p-1 hover:scale-110 active:scale-95 flex items-center justify-center shrink-0 cursor-pointer" data-file="APPLICATION_DOCUMENTATION.md" aria-label="Visualizar APPLICATION_DOCUMENTATION.md"><span class="material-symbols-outlined text-[18px]">visibility</span></button><span class="material-symbols-outlined text-secondary text-sm">description</span><span class="font-semibold shrink-0">APPLICATION_DOCUMENTATION.md</span><span class="text-xs text-on-surface-variant ml-auto text-right" data-i18n="file_appdocs_desc">Padrão para documentação de módulos, telas e fluxos da aplicação</span></div>
       <div class="flex items-center gap-base p-sm px-md hover:bg-surface-variant/20 transition-colors"><button class="view-file-btn text-on-surface-variant hover:text-primary transition-all p-1 hover:scale-110 active:scale-95 flex items-center justify-center shrink-0 cursor-pointer" data-file="DESIGN.md" aria-label="Visualizar DESIGN.md"><span class="material-symbols-outlined text-[18px]">visibility</span></button><span class="material-symbols-outlined text-secondary text-sm">description</span><span class="font-semibold shrink-0">DESIGN.md</span><span class="text-xs text-on-surface-variant ml-auto text-right" data-i18n="file_design_desc">Design system declarativo: tokens, regras, UX</span></div>
       <div class="flex items-center gap-base p-sm px-md hover:bg-surface-variant/20 transition-colors"><button class="view-file-btn text-on-surface-variant hover:text-primary transition-all p-1 hover:scale-110 active:scale-95 flex items-center justify-center shrink-0 cursor-pointer" data-file="REFACTORING.md" aria-label="Visualizar REFACTORING.md"><span class="material-symbols-outlined text-[18px]">visibility</span></button><span class="material-symbols-outlined text-secondary text-sm">description</span><span class="font-semibold shrink-0">REFACTORING.md</span><span class="text-xs text-on-surface-variant ml-auto text-right" data-i18n="file_refactoring_desc">Governança de refatoração: risco, testes, rollback</span></div>
       <div class="flex items-center gap-base p-sm px-md hover:bg-surface-variant/20 transition-colors"><button class="view-file-btn text-on-surface-variant hover:text-primary transition-all p-1 hover:scale-110 active:scale-95 flex items-center justify-center shrink-0 cursor-pointer" data-file="TROUBLESHOOTING.md" aria-label="Visualizar TROUBLESHOOTING.md"><span class="material-symbols-outlined text-[18px]">visibility</span></button><span class="material-symbols-outlined text-secondary text-sm">description</span><span class="font-semibold shrink-0">TROUBLESHOOTING.md</span><span class="text-xs text-on-surface-variant ml-auto text-right" data-i18n="file_troubleshooting_desc">Modelo de investigação de problemas</span></div>
@@ -969,6 +970,285 @@
           <li class="flex items-center gap-2 text-on-surface-variant"><span class="w-1.5 h-1.5 bg-primary rounded-full shrink-0"></span><span data-i18n="template_adr_f4">[DECISION] Decisão tomada e justificativa</span></li>
           <li class="flex items-center gap-2 text-on-surface-variant"><span class="w-1.5 h-1.5 bg-primary rounded-full shrink-0"></span><span data-i18n="template_adr_f5">[CONSEQUENCES] Consequências positivas e negativas</span></li>
         </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- SECTION 9.1 — RISK AND PRIORITIES MATRIX        -->
+<!-- ═══════════════════════════════════════════════ -->
+<section id="risk-priority" class="mb-xl">
+  <h2 class="font-headline-lg text-headline-lg mb-2" data-i18n="risk_priority_title">Matriz de Risco e Prioridades</h2>
+  <p class="text-on-surface-variant mb-lg" data-i18n="risk_priority_subtitle">A classificação de planos por prioridade e risco define os portões de governança, o fluxo de rollback e as exigências de validação para as alterações do repositório.</p>
+
+  <div class="grid md:grid-cols-2 gap-gutter mb-lg items-stretch">
+    <!-- Prioridades Card -->
+    <div class="glass-card rounded-xl p-lg flex flex-col border border-outline-variant/30">
+      <h3 class="font-headline-md text-headline-md mb-md flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">low_priority</span>
+        <span data-i18n="p_scale_title">Escala de Prioridade (P1–P5)</span>
+      </h3>
+      <div class="space-y-sm text-sm flex-1">
+        <div class="flex gap-3 items-start border-b border-outline-variant/20 pb-2">
+          <span class="font-bold text-primary shrink-0 w-8">P1</span>
+          <div>
+            <h5 class="font-semibold text-on-background" data-i18n="p1_name">Crítica (Critical)</h5>
+            <p class="text-xs text-on-surface-variant mt-0.5" data-i18n="p1_desc">Segurança, integridade de dados e falhas críticas que impedem o uso.</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start border-b border-outline-variant/20 pb-2">
+          <span class="font-bold text-primary shrink-0 w-8">P2</span>
+          <div>
+            <h5 class="font-semibold text-on-background" data-i18n="p2_name">Alta (High)</h5>
+            <p class="text-xs text-on-surface-variant mt-0.5" data-i18n="p2_desc">Fluxos principais da aplicação, estabilidade e novas funcionalidades relevantes.</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start border-b border-outline-variant/20 pb-2">
+          <span class="font-bold text-primary shrink-0 w-8">P3</span>
+          <div>
+            <h5 class="font-semibold text-on-background" data-i18n="p3_name">Média (Medium)</h5>
+            <p class="text-xs text-on-surface-variant mt-0.5" data-i18n="p3_desc">Melhorias funcionais de processos, organização geral ou usabilidade do sistema.</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start border-b border-outline-variant/20 pb-2">
+          <span class="font-bold text-primary shrink-0 w-8">P4</span>
+          <div>
+            <h5 class="font-semibold text-on-background" data-i18n="p4_name">Baixa (Low)</h5>
+            <p class="text-xs text-on-surface-variant mt-0.5" data-i18n="p4_desc">Ajustes visuais, textos da interface ou pequenas refatorações localizadas.</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="font-bold text-primary shrink-0 w-8">P5</span>
+          <div>
+            <h5 class="font-semibold text-on-background" data-i18n="p5_name">Opcional (Optional)</h5>
+            <p class="text-xs text-on-surface-variant mt-0.5" data-i18n="p5_desc">Ideias futuras, melhorias experimentais de código ou otimizações não essenciais.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Riscos Card -->
+    <div class="glass-card rounded-xl p-lg flex flex-col border border-outline-variant/30">
+      <h3 class="font-headline-md text-headline-md mb-md flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">warning</span>
+        <span data-i18n="r_scale_title">Escala de Risco (R1–R5)</span>
+      </h3>
+      <div class="space-y-sm text-sm flex-1">
+        <div class="flex gap-3 items-start border-b border-outline-variant/20 pb-2">
+          <span class="font-bold text-primary shrink-0 w-8">R1</span>
+          <div>
+            <h5 class="font-semibold text-on-background" data-i18n="r1_name">Muito Baixo (Very Low)</h5>
+            <p class="text-xs text-on-surface-variant mt-0.5" data-i18n="r1_desc">Apenas alterações de textos, documentação ou estilos visuais sem lógica ou dados.</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start border-b border-outline-variant/20 pb-2">
+          <span class="font-bold text-primary shrink-0 w-8">R2</span>
+          <div>
+            <h5 class="font-semibold text-on-background" data-i18n="r2_name">Baixo (Low)</h5>
+            <p class="text-xs text-on-surface-variant mt-0.5" data-i18n="r2_desc">Alterações em componentes isolados, lógica simples e testes puramente locais.</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start border-b border-outline-variant/20 pb-2">
+          <span class="font-bold text-primary shrink-0 w-8">R3</span>
+          <div>
+            <h5 class="font-semibold text-on-background" data-i18n="r3_name">Moderado (Moderate)</h5>
+            <p class="text-xs text-on-surface-variant mt-0.5" data-i18n="r3_desc">Lógica compartilhada entre módulos, fluxos operacionais principais, possibilidade de regressões.</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start border-b border-outline-variant/20 pb-2">
+          <span class="font-bold text-primary shrink-0 w-8">R4</span>
+          <div>
+            <h5 class="font-semibold text-on-background" data-i18n="r4_name">Alto (High)</h5>
+            <p class="text-xs text-on-surface-variant mt-0.5" data-i18n="r4_desc">Persistência local, estados globais de aplicação, refatoração de módulos importantes ou integrações.</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="font-bold text-primary shrink-0 w-8">R5</span>
+          <div>
+            <h5 class="font-semibold text-on-background" data-i18n="r5_name">Crítico (Critical)</h5>
+            <p class="text-xs text-on-surface-variant mt-0.5" data-i18n="r5_desc">Segurança de acessos, autenticação, migração estrutural de banco de dados ou risco severo de perda de dados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Operational Score & Visual Grid Matrix -->
+  <div class="grid lg:grid-cols-3 gap-gutter items-stretch mb-lg">
+    <!-- Score & Governance Gates -->
+    <div class="lg:col-span-1 glass-card rounded-xl p-lg flex flex-col justify-between border border-outline-variant/30">
+      <div>
+        <h3 class="font-headline-md text-headline-md mb-sm flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">calculate</span>
+          <span data-i18n="score_formula_title">Operational Score</span>
+        </h3>
+        <div class="p-md bg-surface-variant/40 rounded-xl text-center mb-md border border-outline-variant/20">
+          <span class="font-mono text-xl font-bold text-primary">Score = (6 - P) * R</span>
+        </div>
+        <p class="text-sm text-on-surface-variant mb-md" data-i18n="score_formula_desc">
+          O Operational Score determina os portões obrigatórios de validação que o plano deve seguir.
+        </p>
+      </div>
+
+      <div class="space-y-sm text-xs">
+        <div class="p-sm rounded-lg bg-rose-950/20 border border-rose-900/40 text-rose-300 flex items-start gap-2">
+          <span class="material-symbols-outlined shrink-0 mt-0.5 text-sm">gavel</span>
+          <div>
+            <strong data-i18n="gate_high_title">Risco Alto (15–25):</strong>
+            <span data-i18n="gate_high_desc">Exige plano de rollback obrigatório, aprovação humana formal e evidências de testes físicos anexados.</span>
+          </div>
+        </div>
+        <div class="p-sm rounded-lg bg-amber-950/20 border border-amber-900/40 text-amber-300 flex items-start gap-2">
+          <span class="material-symbols-outlined shrink-0 mt-0.5 text-sm">rule</span>
+          <div>
+            <strong data-i18n="gate_mod_title">Risco Moderado (6–12):</strong>
+            <span data-i18n="gate_mod_desc">Exige build completo limpo, testes de regressão de módulos adjacentes e registro explícito de limitações.</span>
+          </div>
+        </div>
+        <div class="p-sm rounded-lg bg-emerald-950/20 border border-emerald-900/40 text-emerald-300 flex items-start gap-2">
+          <span class="material-symbols-outlined shrink-0 mt-0.5 text-sm">fact_check</span>
+          <div>
+            <strong data-i18n="gate_low_title">Risco Baixo (1–5):</strong>
+            <span data-i18n="gate_low_desc">Exige revisão de arquivo por diff de texto e validação sintática simples antes do commit.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5x5 Visual Risk Matrix Grid -->
+    <div class="lg:col-span-2 glass-card rounded-xl p-lg flex flex-col border border-outline-variant/30 overflow-hidden">
+      <h3 class="font-headline-md text-headline-md mb-sm flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">grid_on</span>
+        <span data-i18n="matrix_visual_title">Matriz Visual 5x5</span>
+      </h3>
+      <p class="text-xs text-on-surface-variant mb-md" data-i18n="matrix_visual_subtitle">Eixo Horizontal: Prioridade (P1 a P5) | Eixo Vertical: Risco (R1 a R5)</p>
+      
+      <div class="flex-1 overflow-x-auto flex items-center justify-center p-xs">
+        <table class="border-collapse table-fixed w-full max-w-[500px] text-center text-xs font-mono">
+          <thead>
+            <tr class="border-b border-outline-variant/30">
+              <th class="w-12 p-xs text-right text-on-surface-variant font-sans">Risk \ Pri</th>
+              <th class="p-xs text-primary">P1 (5)</th>
+              <th class="p-xs text-primary">P2 (4)</th>
+              <th class="p-xs text-primary">P3 (3)</th>
+              <th class="p-xs text-primary">P4 (2)</th>
+              <th class="p-xs text-primary">P5 (1)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-outline-variant/20">
+            <!-- R5 -->
+            <tr>
+              <td class="p-xs text-right font-bold text-primary font-sans">R5 (5)</td>
+              <td class="p-2"><div class="p-1.5 rounded bg-rose-950/40 text-rose-300 border border-rose-900/50 font-bold" title="Critical R5 x P1">25</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-rose-950/40 text-rose-300 border border-rose-900/50 font-bold" title="Critical R5 x P2">20</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-rose-950/40 text-rose-300 border border-rose-900/50 font-bold" title="Critical R5 x P3">15</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-amber-950/40 text-amber-300 border border-amber-900/50 font-bold" title="Moderate R5 x P4">10</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-900/50 font-bold" title="Low R5 x P5">5</div></td>
+            </tr>
+            <!-- R4 -->
+            <tr>
+              <td class="p-xs text-right font-bold text-primary font-sans">R4 (4)</td>
+              <td class="p-2"><div class="p-1.5 rounded bg-rose-950/40 text-rose-300 border border-rose-900/50 font-bold" title="Critical R4 x P1">20</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-rose-950/40 text-rose-300 border border-rose-900/50 font-bold" title="Critical R4 x P2">16</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-amber-950/40 text-amber-300 border border-amber-900/50 font-bold" title="Moderate R4 x P3">12</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-amber-950/40 text-amber-300 border border-amber-900/50 font-bold" title="Moderate R4 x P4">8</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-900/50 font-bold" title="Low R4 x P5">4</div></td>
+            </tr>
+            <!-- R3 -->
+            <tr>
+              <td class="p-xs text-right font-bold text-primary font-sans">R3 (3)</td>
+              <td class="p-2"><div class="p-1.5 rounded bg-rose-950/40 text-rose-300 border border-rose-900/50 font-bold" title="Critical R3 x P1">15</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-amber-950/40 text-amber-300 border border-amber-900/50 font-bold" title="Moderate R3 x P2">12</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-amber-950/40 text-amber-300 border border-amber-900/50 font-bold" title="Moderate R3 x P3">9</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-amber-950/40 text-amber-300 border border-amber-900/50 font-bold" title="Moderate R3 x P4">6</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-900/50 font-bold" title="Low R3 x P5">3</div></td>
+            </tr>
+            <!-- R2 -->
+            <tr>
+              <td class="p-xs text-right font-bold text-primary font-sans">R2 (2)</td>
+              <td class="p-2"><div class="p-1.5 rounded bg-amber-950/40 text-amber-300 border border-amber-900/50" title="Moderate R2 x P1">10</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-amber-950/40 text-amber-300 border border-amber-900/50" title="Moderate R2 x P2">8</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-amber-950/40 text-amber-300 border border-amber-900/50" title="Moderate R2 x P3">6</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-900/50" title="Low R2 x P4">4</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-900/50" title="Low R2 x P5">2</div></td>
+            </tr>
+            <!-- R1 -->
+            <tr>
+              <td class="p-xs text-right font-bold text-primary font-sans">R1 (1)</td>
+              <td class="p-2"><div class="p-1.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-900/50" title="Low R1 x P1">5</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-900/50" title="Low R1 x P2">4</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-900/50" title="Low R1 x P3">3</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-900/50" title="Low R1 x P4">2</div></td>
+              <td class="p-2"><div class="p-1.5 rounded bg-emerald-950/40 text-emerald-300 border border-emerald-900/50" title="Low R1 x P5">1</div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- SECTION 9.2 — APPLICATION DOCUMENTATION         -->
+<!-- ═══════════════════════════════════════════════ -->
+<section id="app-documentation" class="mb-xl">
+  <h2 class="font-headline-lg text-headline-lg mb-2" data-i18n="app_docs_title">Documentação da Aplicação em Desenvolvimento</h2>
+  <p class="text-on-surface-variant mb-lg" data-i18n="app_docs_subtitle">O framework VibeWork determina que a documentação das regras de negócio, telas e fluxos da própria aplicação deve residir fora da pasta do framework canônico, seguindo o padrão de separação física de propriedades.</p>
+
+  <div class="grid md:grid-cols-5 gap-gutter items-stretch">
+    <!-- Explicativo da Separação Física -->
+    <div class="md:col-span-3 glass-card rounded-xl p-lg flex flex-col justify-between border border-outline-variant/30">
+      <div>
+        <h3 class="font-headline-md text-headline-md mb-md flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">share</span>
+          <span data-i18n="separation_rule_title">Separação de Propriedade Física</span>
+        </h3>
+        <p class="text-sm text-on-surface-variant mb-sm" data-i18n="separation_rule_desc1">
+          <strong>O Framework define a regra:</strong> A pasta <code>FCVW/</code> e seus subdiretórios guardam as instruções e os templates genéricos de governança que orientam a IA e os desenvolvedores.
+        </p>
+        <p class="text-sm text-on-surface-variant" data-i18n="separation_rule_desc2">
+          <strong>A Aplicação possui o conteúdo:</strong> A documentação das regras e telas geradas pertence à aplicação downstream e deve residir em <code>docs/</code> na raiz do projeto (como <code>docs/modules/</code> e <code>docs/flows/</code>), mantendo o código e o negócio separados.
+        </p>
+      </div>
+      
+      <div class="mt-md p-md bg-surface-container-high/40 rounded-xl flex gap-3 items-start border border-outline-variant/20">
+        <span class="material-symbols-outlined text-primary shrink-0">info</span>
+        <div class="text-xs text-on-surface-variant">
+          <span data-i18n="app_docs_info">A capacidade de criar arquivos markdown de documentação estruturada para cada módulo e tela garante que a inteligência artificial preserve o contexto de negócio a longo prazo.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Estrutura Recomendada do Repositório -->
+    <div class="md:col-span-2 glass-card rounded-xl p-lg border border-outline-variant/30 flex flex-col">
+      <h3 class="font-headline-md text-headline-md mb-md flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary">folder_open</span>
+        <span data-i18n="recommended_tree_title">Estrutura Física Recomendada</span>
+      </h3>
+      
+      <!-- macOS-style folder view -->
+      <div class="editor-window rounded-lg overflow-hidden border border-outline-variant/30 flex-1 flex flex-col font-label-md text-xs bg-surface-container-lowest/80 p-sm select-none">
+        <div class="flex items-center gap-1.5 text-on-surface-variant font-mono">
+          <span class="w-1.5 h-1.5 bg-rose-500 rounded-full"></span>
+          <span class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></span>
+          <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+          <span class="ml-2 text-[10px] text-outline">File Tree</span>
+        </div>
+        <div class="mt-sm space-y-1 font-mono text-on-surface-variant">
+          <div>[project-root]/</div>
+          <div class="pl-4">├── FCVW/ <span class="text-outline text-[10px]">(Framework Baseline)</span></div>
+          <div class="pl-4">└── docs/ <span class="text-primary text-[10px]">(Application Domain)</span></div>
+          <div class="pl-8">├── README.md</div>
+          <div class="pl-8">├── modules/ <span class="text-outline text-[10px]">(Screens & Components)</span></div>
+          <div class="pl-12">├── TEMPLATE_MODULE.md</div>
+          <div class="pl-12">├── home-dashboard.md</div>
+          <div class="pl-12">└── auth-profile.md</div>
+          <div class="pl-8">└── flows/ <span class="text-outline text-[10px]">(Behavior & Navigation)</span></div>
+          <div class="pl-12">├── TEMPLATE_FLOW.md</div>
+          <div class="pl-12">└── login-checkout-flow.md</div>
+        </div>
       </div>
     </div>
   </div>
@@ -1416,7 +1696,7 @@ const translations = {
         "hero_desc": "Um framework de governança que organiza escopo, planos, changelogs, auditorias, troubleshooting, decisões arquiteturais, design system, habilidades de IA sob demanda e wiki técnica — tudo em Markdown versionado. Stack-agnostic, 100% rastreável, projetado para que agentes de IA trabalhem com regras claras.",
         "badge_agnostic": "Stack Agnostic",
         "cta_github": "GitHub Repository",
-        "cta_docs": "Documentação",
+        "cta_docs": "Pipeline",
         "what_is_title": "O que é",
         "what_is_desc": "Um framework de governança assistida por IA focado em rastreabilidade, arquitetura de memória técnica e automação de fluxos de decisão técnica. Funciona como documentação versionada em Markdown, organiza planos, changelogs, auditorias, troubleshooting, decisões, design system, habilidades e wiki técnica.",
         "what_is_not_title": "O que NÃO é",
@@ -1735,7 +2015,49 @@ const translations = {
         "sec_s4_desc": "Execução de comandos de alto privilégio ou rede externa.",
         "sec_handshake_title": "Secret Handshake Protocol",
         "sec_handshake_desc1": "A IA está proibida de solicitar segredos, API keys ou tokens no chat público da sessão.",
-        "sec_handshake_desc2": "Em vez disso, a IA deve preparar a variável local adequada no arquivo .env.local e orientar o usuário a preencher o valor localmente no seu computador, longe dos logs de conversação."
+        "sec_handshake_desc2": "Em vez disso, a IA deve preparar a variável local adequada no arquivo .env.local e orientar o usuário a preencher o valor localmente no seu computador, longe dos logs de conversação.",
+        "risk_priority_title": "Matriz de Risco e Prioridades",
+        "risk_priority_subtitle": "A classifica\u00e7\u00e3o de planos por prioridade e risco define os port\u00f5es de governan\u00e7a, o fluxo de rollback e as exig\u00eancias de valida\u00e7\u00e3o para as altera\u00e7\u00f5es do reposit\u00f3rio.",
+        "p_scale_title": "Escala de Prioridade (P1\u2013P5)",
+        "p1_name": "Cr\u00edtica (Critical)",
+        "p1_desc": "Seguran\u00e7a, integridade de dados e falhas cr\u00edticas que impedem o uso.",
+        "p2_name": "Alta (High)",
+        "p2_desc": "Fluxos principais da aplica\u00e7\u00e3o, estabilidade e novas funcionalidades relevantes.",
+        "p3_name": "M\u00e9dia (Medium)",
+        "p3_desc": "Melhorias funcionais de processos, organiza\u00e7\u00e3o geral ou usabilidade do sistema.",
+        "p4_name": "Baixa (Low)",
+        "p4_desc": "Ajustes visuais, textos da interface ou pequenas refatora\u00e7\u00f5es localizadas.",
+        "p5_name": "Opcional (Optional)",
+        "p5_desc": "Ideias futuras, melhorias experimentais de c\u00f3digo ou otimiza\u00e7\u00f5es n\u00e3o essenciais.",
+        "r_scale_title": "Escala de Risco (R1\u2013R5)",
+        "r1_name": "Muito Baixo (Very Low)",
+        "r1_desc": "Apenas altera\u00e7\u00f5es de textos, documenta\u00e7\u00e3o ou estilos visuais sem l\u00f3gica ou dados.",
+        "r2_name": "Baixo (Low)",
+        "r2_desc": "Altera\u00e7\u00f5es em componentes isolados, l\u00f3gica simples e testes puramente locais.",
+        "r3_name": "Moderado (Moderate)",
+        "r3_desc": "L\u00f3gica compartilhada entre m\u00f3dulos, fluxos operacionais principais, possibilidade de regress\u00f5es.",
+        "r4_name": "Alto (High)",
+        "r4_desc": "Persist\u00eancia local, estados globais de aplica\u00e7\u00e3o, refatora\u00e7\u00e3o de m\u00f3dulos importantes ou integra\u00e7\u00f5es.",
+        "r5_name": "Cr\u00edtico (Critical)",
+        "r5_desc": "Seguran\u00e7a de acessos, autentica\u00e7\u00e3o, migra\u00e7\u00e3o estrutural de banco de dados ou risco severo de perda de dados.",
+        "score_formula_title": "Operational Score",
+        "score_formula_desc": "O Operational Score determina os port\u00f5es obrigat\u00f3rios de valida\u00e7\u00e3o que o plano deve seguir.",
+        "gate_high_title": "Risco Alto (15\u201325):",
+        "gate_high_desc": "Exige plano de rollback obrigat\u00f3rio, aprova\u00e7\u00e3o humana formal e evid\u00eancias de testes f\u00edsicos anexados.",
+        "gate_mod_title": "Risco Moderado (6\u201312):",
+        "gate_mod_desc": "Exige build completo limpo, testes de regress\u00e3o de m\u00f3dulos adjacentes e registro expl\u00edcito de limita\u00e7\u00f5es.",
+        "gate_low_title": "Risco Baixo (1\u20135):",
+        "gate_low_desc": "Exige revis\u00e3o de arquivo por diff de texto e valida\u00e7\u00e3o sint\u00e1tica simples antes do commit.",
+        "matrix_visual_title": "Matriz Visual 5x5",
+        "matrix_visual_subtitle": "Eixo Horizontal: Prioridade (P1 a P5) | Eixo Vertical: Risco (R1 a R5)",
+        "app_docs_title": "Documenta\u00e7\u00e3o da Aplica\u00e7\u00e3o",
+        "app_docs_subtitle": "O framework VibeWork determina que a documenta\u00e7\u00e3o das regras de neg\u00f3cio, telas e fluxos da pr\u00f3pria aplica\u00e7\u00e3o deve residir fora da pasta do framework can\u00f4nico, seguindo o padr\u00e3o de separa\u00e7\u00e3o f\u00edsica de propriedades.",
+        "separation_rule_title": "Separa\u00e7\u00e3o de Propriedade F\u00edsica",
+        "separation_rule_desc1": "O Framework define a regra: A pasta FCVW/ e seus subdiret\u00f3rios guardam as instru\u00e7\u00f5es e os templates gen\u00e9ricos de governan\u00e7a que orientam a IA e os desenvolvedores.",
+        "separation_rule_desc2": "A Aplica\u00e7\u00e3o possui o conte\u00fado: A documenta\u00e7\u00e3o das regras e telas geradas pertence \u00e0 aplica\u00e7\u00e3o downstream e deve residir em docs/ na raiz do projeto (como docs/modules/ e docs/flows/), mantendo o c\u00f3digo e o neg\u00f3cio separados.",
+        "app_docs_info": "A capacidade de criar arquivos markdown de documenta\u00e7\u00e3o estruturada para cada m\u00f3dulo e tela garante que a intelig\u00eancia artificial preserve o contexto de neg\u00f3cio a longo prazo.",
+        "recommended_tree_title": "Estrutura F\u00edsica Recomendada",
+        "file_appdocs_desc": "Padr\u00e3o para documenta\u00e7\u00e3o de m\u00f3dulos, telas e fluxos da aplica\u00e7\u00e3o"
     },
     "en": {
         "page_title": "FrameCode VibeWork",
@@ -1751,7 +2073,7 @@ const translations = {
         "hero_desc": "A governance framework that organizes scope, plans, changelogs, audits, troubleshooting, architectural decisions, design system, on-demand AI skills, and technical wiki — all in versioned Markdown. Stack-agnostic, 100% traceable, designed so AI agents work with clear rules.",
         "badge_agnostic": "Stack Agnostic",
         "cta_github": "GitHub Repository",
-        "cta_docs": "Documentation",
+        "cta_docs": "Pipeline",
         "what_is_title": "What it is",
         "what_is_desc": "An AI-assisted governance framework focused on traceability, technical memory architecture, and automation of technical decision flows. Works as versioned Markdown documentation, organizing plans, changelogs, audits, troubleshooting, decisions, design system, skills, and technical wiki.",
         "what_is_not_title": "What it is NOT",
@@ -2070,7 +2392,49 @@ const translations = {
         "sec_s4_desc": "High privilege commands execution or external network.",
         "sec_handshake_title": "Secret Handshake Protocol",
         "sec_handshake_desc1": "AI is forbidden from requesting secrets, API keys, or tokens in session chat.",
-        "sec_handshake_desc2": "Instead, AI must prepare variables in .env.local and ask user to fill it locally."
+        "sec_handshake_desc2": "Instead, AI must prepare variables in .env.local and ask user to fill it locally.",
+        "risk_priority_title": "Risk and Priority Matrix",
+        "risk_priority_subtitle": "The classification of plans by priority and risk defines governance gates, rollback requirements, and validation standards for repository changes.",
+        "p_scale_title": "Priority Scale (P1\u2013P5)",
+        "p1_name": "Critical (P1)",
+        "p1_desc": "Security vulnerabilities, data integrity issues, and critical failures that block application usage.",
+        "p2_name": "High (P2)",
+        "p2_desc": "Core application workflows, general stability, and significant new features.",
+        "p3_name": "Medium (P3)",
+        "p3_desc": "Functional improvements, organizational adjustments, or system usability enhancements.",
+        "p4_name": "Low (P4)",
+        "p4_desc": "Visual tweaks, user interface copy updates, or minor localized code refactorings.",
+        "p5_name": "Optional (P5)",
+        "p5_desc": "Future ideas, experimental features, or non-essential performance optimization.",
+        "r_scale_title": "Risk Scale (R1\u2013R5)",
+        "r1_name": "Very Low (R1)",
+        "r1_desc": "Documentation, visual styles, and copy adjustments with zero impact on logic or data.",
+        "r2_name": "Low (R2)",
+        "r2_desc": "Changes restricted to isolated components, simple localized logic, and local tests.",
+        "r3_name": "Moderate (R3)",
+        "r3_desc": "Shared logic across modules, primary operational workflows, and risk of localized regression.",
+        "r4_name": "High (R4)",
+        "r4_desc": "Local persistence changes, global states, integrations, or broad refactoring of core modules.",
+        "r5_name": "Critical (R5)",
+        "r5_desc": "Security controls, authentication systems, database migrations, or high risk of data loss.",
+        "score_formula_title": "Operational Score",
+        "score_formula_desc": "The Operational Score calculates the mandatory validation gates that the plan must satisfy.",
+        "gate_high_title": "High Risk (15\u201325):",
+        "gate_high_desc": "Requires a mandatory rollback plan, formal human approval, and physical test stdout logs attached.",
+        "gate_mod_title": "Moderate Risk (6\u201312):",
+        "gate_mod_desc": "Requires a clean full build, regression testing of adjacent modules, and documented limitations.",
+        "gate_low_title": "Low Risk (1\u20135):",
+        "gate_low_desc": "Requires file diff visual checks and simple syntax validation before commit.",
+        "matrix_visual_title": "5x5 Visual Matrix",
+        "matrix_visual_subtitle": "Horizontal Axis: Priority (P1 to P5) | Vertical Axis: Risk (R1 to R5)",
+        "app_docs_title": "Application Documentation",
+        "app_docs_subtitle": "The VibeWork framework dictates that business logic, screens, and workflows of the application must reside outside the framework's baseline directory, adhering to physical ownership rules.",
+        "separation_rule_title": "Physical Property Separation",
+        "separation_rule_desc1": "The Framework defines rules: The FCVW/ directory holds templates, guides, and generic governance structures to instruct agents and humans.",
+        "separation_rule_desc2": "The Application owns content: Specific module and page documentation belongs downstream and is saved in docs/ at the project root (e.g., docs/modules/ and docs/flows/).",
+        "app_docs_info": "The capability to generate structured markdown documentation for each module and screen ensures the AI assistant maintains long-term business context.",
+        "recommended_tree_title": "Recommended File Tree",
+        "file_appdocs_desc": "Standard for documenting downstream application pages, components, and flows"
     },
     "es": {
         "page_title": "FrameCode VibeWork",
@@ -2086,7 +2450,7 @@ const translations = {
         "hero_desc": "Un framework de gobernanza que organiza alcance, planes, changelogs, auditorías, troubleshooting, decisiones arquitectónicas, design system, habilidades de IA bajo demanda y wiki técnica — todo en Markdown versionado. Stack-agnostic, 100% rastreable, diseñado para que agentes de IA trabajen con reglas claras.",
         "badge_agnostic": "Stack Agnostic",
         "cta_github": "GitHub Repository",
-        "cta_docs": "Documentación",
+        "cta_docs": "Pipeline",
         "what_is_title": "O que es",
         "what_is_desc": "Un framework de gobernanza asistida por IA enfocado en rastreabilidad, arquitectura de memoria técnica y automatización de flujos de decisión técnica. Funciona como documentación versionada en Markdown, organiza planes, changelogs, auditorías, troubleshooting, decisiones, design system, habilidades y wiki técnica.",
         "what_is_not_title": "O que NO es",
@@ -2405,7 +2769,49 @@ const translations = {
         "sec_s4_desc": "Ejecución de comandos de alto privilegio o red externa.",
         "sec_handshake_title": "Secret Handshake Protocol",
         "sec_handshake_desc1": "La IA tiene prohibido solicitar secretos, claves API o tokens en el chat.",
-        "sec_handshake_desc2": "En su lugar, la IA debe preparar la variable en .env.local e indicar al usuario que la complete localmente."
+        "sec_handshake_desc2": "En su lugar, la IA debe preparar la variable en .env.local e indicar al usuario que la complete localmente.",
+        "risk_priority_title": "Matriz de Riesgo y Prioridades",
+        "risk_priority_subtitle": "La clasificaci\u00f3n de los planes por prioridad y riesgo define los l\u00edmites de gobernanza, el flujo de rollback y las exigencias de validaci\u00f3n para los cambios del repositorio.",
+        "p_scale_title": "Escala de Prioridad (P1\u2013P5)",
+        "p1_name": "Cr\u00edtica (Critical)",
+        "p1_desc": "Seguridad, integridad de datos y fallos cr\u00edticos que impiden el uso.",
+        "p2_name": "Alta (High)",
+        "p2_desc": "Flujos principales de la aplicaci\u00f3n, estabilidad y nuevas funcionalidades relevantes.",
+        "p3_name": "Media (Medium)",
+        "p3_desc": "Mejoras funcionales de procesos, organizaci\u00f3n general o usabilidad del sistema.",
+        "p4_name": "Baja (Low)",
+        "p4_desc": "Ajustes visuales, textos de interfaz o peque\u00f1as refactorizaciones localizadas.",
+        "p5_name": "Opcional (Optional)",
+        "p5_desc": "Ideas futuras, mejoras experimentales de c\u00f3digo o integraciones no esenciales.",
+        "r_scale_title": "Escala de Riesgo (R1\u2013R5)",
+        "r1_name": "Muy Bajo (Very Low)",
+        "r1_desc": "Solo cambios de textos, documentaci\u00f3n o estilos visuales sin l\u00f3gica ni datos.",
+        "r2_name": "Bajo (Low)",
+        "r2_desc": "Cambios en componentes aislados, l\u00f3gica simple y pruebas puramente locales.",
+        "r3_name": "Moderado (Moderate)",
+        "r3_desc": "L\u00f3gica compartida entre m\u00f3dulos, flujos operativos principales, posibilidad de regresiones.",
+        "r4_name": "Alto (High)",
+        "r4_desc": "Persistencia local, estados globales de aplicaci\u00f3n, refatoraci\u00f3n de m\u00f3dulos importantes o integraciones.",
+        "r5_name": "Cr\u00edtico (Critical)",
+        "r5_desc": "Seguridad de accesos, autenticaci\u00f3n, migraci\u00f3n estructural de base de datos o riesgo grave de p\u00e9rdida de datos.",
+        "score_formula_title": "Operational Score",
+        "score_formula_desc": "El Operational Score determina las puertas obligatorias de validaci\u00f3n que debe seguir el plan.",
+        "gate_high_title": "Riesgo Alto (15\u201325):",
+        "gate_high_desc": "Exige un plan de rollback obligatorio, aprobaci\u00f3n humana formal y evidencias de pruebas f\u00edsicas adjuntas.",
+        "gate_mod_title": "Riesgo Moderado (6\u201312):",
+        "gate_mod_desc": "Exige build completo limpio, pruebas de regresi\u00f3n de m\u00f3dulos adyacentes y registro expl\u00edcito de limitaciones.",
+        "gate_low_title": "Riesgo Bajo (1\u20135):",
+        "gate_low_desc": "Exige revisi\u00f3n de archivos mediante diff de texto y validaci\u00f3n sint\u00e1ctica b\u00e1sica antes del commit.",
+        "matrix_visual_title": "Matriz Visual 5x5",
+        "matrix_visual_subtitle": "Eje Horizontal: Prioridad (P1 a P5) | Eje Vertical: Riesgo (R1 a R5)",
+        "app_docs_title": "Documentaci\u00f3n de la Aplicaci\u00f3n",
+        "app_docs_subtitle": "El framework VibeWork determina que la documentaci\u00f3n de las reglas de negocio, pantallas y flujos de la propia aplicaci\u00f3n debe residir fuera de la carpeta del framework can\u00f3nico, respetando las reglas de propiedad f\u00edsica.",
+        "separation_rule_title": "Separaci\u00f3n de Propiedad F\u00edsica",
+        "separation_rule_desc1": "El Framework define la regla: La carpeta FCVW/ y sus subdirectorios guardan las instrucciones y plantillas gen\u00e9ricas de gobernanza que orientan a la IA y a los desarrollores.",
+        "separation_rule_desc2": "La Aplicaci\u00f3n posee el contenido: La documentaci\u00f3n de las reglas y pantallas generadas pertenece a la aplicaci\u00f3n derivada y debe residir en docs/ en la ra\u00edz del proyecto (como docs/modules/ y docs/flows/).",
+        "app_docs_info": "La capacidad de crear archivos markdown de documentaci\u00f3n estructurada para cada m\u00f3dulo y pantalla garantiza que la inteligencia artificial preserve el contexto de negocio a largo plazo.",
+        "recommended_tree_title": "Estructura F\u00edsica Recomendada",
+        "file_appdocs_desc": "Est\u00e1ndar para documentar p\u00e1ginas, componentes y flujos de la aplicaci\u00f3n derivada"
     },
     "de": {
         "page_title": "FrameCode VibeWork",
@@ -2421,7 +2827,7 @@ const translations = {
         "hero_desc": "Ein Governance-Framework, das Scope, Pläne, Changelogs, Audits, Fehlerbehebung, Architekturentscheidungen, Design-Systeme, On-Demand-KI-Fähigkeiten und technische Wikis organisiert – alles in versioniertem Markdown. Stack-agnostisch, 100% verfolgbar, so konzipiert, dass KI-Agenten mit klaren Regeln arbeiten.",
         "badge_agnostic": "Stack Agnostic",
         "cta_github": "GitHub-Repository",
-        "cta_docs": "Dokumentation",
+        "cta_docs": "Pipeline",
         "what_is_title": "Was es ist",
         "what_is_desc": "Ein KI-gestütztes Governance-Framework, das sich auf Rückverfolgbarkeit, technische Speicherarchitektur und die Automatisierung technischer Entscheidungsflüsse konzentriert. Funktioniert als versionierte Markdown-Dokumentation, organisiert Pläne, Changelogs, Audits, Fehlerbehebung, Entscheidungen, Design-Systeme, Fähigkeiten und technische Wikis.",
         "what_is_not_title": "Was es NICHT ist",
@@ -2740,7 +3146,49 @@ const translations = {
         "sec_s4_desc": "Ausführung von Befehlen mit hohen Rechten oder externes Netzwerk.",
         "sec_handshake_title": "Secret Handshake Protocol",
         "sec_handshake_desc1": "Der KI ist es untersagt, Geheimnisse, API-Schlüssel oder Token im Chat anzufordern.",
-        "sec_handshake_desc2": "Stattdessen muss die KI die Variable in .env.local vorbereiten und den Benutzer anweisen, sie lokal auszufüllen."
+        "sec_handshake_desc2": "Stattdessen muss die KI die Variable in .env.local vorbereiten und den Benutzer anweisen, sie lokal auszufüllen.",
+        "risk_priority_title": "Risiko- und Priorit\u00e4tsmatrix",
+        "risk_priority_subtitle": "Die Klassifizierung von Pl\u00e4nen nach Priorit\u00e4t und Risiko definiert Governance-Tore, Rollback-Anforderungen und Validierungsstandards f\u00fcr Repository-\u00c4nderungen.",
+        "p_scale_title": "Priorit\u00e4tsskala (P1\u2013P5)",
+        "p1_name": "Kritisch (Critical)",
+        "p1_desc": "Sicherheitsl\u00fccken, Datenintegrit\u00e4tsprobleme und kritische Fehler, die die Nutzung der Anwendung blockieren.",
+        "p2_name": "Hoch (High)",
+        "p2_desc": "Kernabl\u00e4ufe der Anwendung, allgemeine Stabilit\u00e4t und wichtige neue Funktionen.",
+        "p3_name": "Mittel (Medium)",
+        "p3_desc": "Funktionale Verbesserungen, organisatorische Anpassungen oder Optimierungen der Systembenutzerfreundlichkeit.",
+        "p4_name": "Niedrig (Low)",
+        "p4_desc": "Visuelle Anpassungen, Aktualisierungen der Benutzeroberfl\u00e4che oder kleinere lokale Code-Refactorings.",
+        "p5_name": "Optional (Optional)",
+        "p5_desc": "Zuk\u00fcnftige Ideen, experimentelle Funktionen oder nicht wesentliche Leistungsoptimierungen.",
+        "r_scale_title": "Risikoskala (R1\u2013R5)",
+        "r1_name": "Sehr niedrig (Very Low)",
+        "r1_desc": "Dokumentation, visuelle Stile und Textanpassungen ohne Auswirkungen auf Logik oder Daten.",
+        "r2_name": "Niedrig (Low)",
+        "r2_desc": "\u00c4nderungen an isolierten Komponenten, einfache lokale Logik und rein lokale Tests.",
+        "r3_name": "Moderat (Moderate)",
+        "r3_desc": "Gemeinsame Logik \u00fcber Module hinweg, prim\u00e4re Arbeitsabl\u00e4ufe und Risiko einer lokalen Regression.",
+        "r4_name": "Hoch (High)",
+        "r4_desc": "Lokale Persistenz\u00e4nderungen, globale Zust\u00e4nde, Integrationen oder umfassendes Refactoring von Kernmodulen.",
+        "r5_name": "Kritisch (Critical)",
+        "r5_desc": "Sicherheitskontrollen, Authentifizierungssysteme, Datenbankmigrationen oder hohes Risiko von Datenverlust.",
+        "score_formula_title": "Operational Score",
+        "score_formula_desc": "Der Operational Score bestimmt die obligatorischen Validierungstore, die der Plan erf\u00fcllen muss.",
+        "gate_high_title": "Hohes Risiko (15\u201325):",
+        "gate_high_desc": "Erfordert einen obligatorischen Rollback-Plan, eine formelle menschliche Genehmigung und beigef\u00fcgte physische Testprotokolle.",
+        "gate_mod_title": "Moderates Risiko (6\u201312):",
+        "gate_mod_desc": "Erfordert einen sauberen vollst\u00e4ndigen Build, Regressionstests benachbarter Module und dokumentierte Einschr\u00e4nkungen.",
+        "gate_low_title": "Niedriges Risiko (1\u20135):",
+        "gate_low_desc": "Erfordert visuelle Pr\u00fcfungen der Dateiunterschiede und eine einfache Syntaxvalidierung vor dem Commit.",
+        "matrix_visual_title": "Visuelle 5x5-Matrix",
+        "matrix_visual_subtitle": "Horizontale Achse: Priorit\u00e4t (P1 bis P5) | Vertikale Achse: Risiko (R1 bis R5)",
+        "app_docs_title": "Anwendungsdokumentation",
+        "app_docs_subtitle": "Das VibeWork-Framework schreibt vor, dass Gesch\u00e4ftslogik, Bildschirme und Arbeitsabl\u00e4ufe der Anwendung au\u00dferhalb des Framework-Baseline-Verzeichnisses liegen m\u00fcssen, um die Regeln zur physischen Eigent\u00fcmerschaft einzuhalten.",
+        "separation_rule_title": "Physische Eigentumstrennung",
+        "separation_rule_desc1": "Das Framework definiert Regeln: Das Verzeichnis FCVW/ enth\u00e4lt Vorlagen, Anleitungen und generische Governance-Strukturen, um Agenten und Menschen anzuleiten.",
+        "separation_rule_desc2": "Die Anwendung besitzt Inhalt: Die spezifische Modul- und Seitendokumentation geh\u00f6rt zur Downstream-Anwendung und wird im Projektstammverzeichnis unter docs/ gespeichert (z. B. docs/modules/ und docs/flows/).",
+        "app_docs_info": "Die F\u00e4higkeit, f\u00fcr jedes Modul und jeden Bildschirm eine strukturierte Markdown-Dokumentation zu erstellen, stellt sicher, dass der KI-Assistent den langfristigen Gesch\u00e4ftskontext beibeh\u00e4lt.",
+        "recommended_tree_title": "Empfohlener Dateibaum",
+        "file_appdocs_desc": "Standard zur Dokumentation von Anwendungsseiten, Komponenten und Abl\u00e4ufen"
     }
 };
 
