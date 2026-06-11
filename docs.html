@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="dark" lang="pt-BR">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title data-i18n="doc_page_title">FrameCode VibeWork - Pipeline de Governança</title>
-<meta name="description" content="Pipeline interativo e governança documental de IA para FrameCode VibeWork."/>
+<title data-i18n="doc_page_title">FrameCode VibeWork - Pipeline de GovernanÃ§a</title>
+<meta name="description" content="Pipeline interativo e governanÃ§a documental de IA para FrameCode VibeWork."/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Sora:wght@600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -197,7 +197,7 @@
   </div>
 
   <!-- Title Center -->
-  <div class="hidden md:flex font-headline-md text-sm text-on-surface-variant tracking-wide font-bold uppercase" data-i18n="doc_title">Pipeline de Governança</div>
+  <div class="hidden md:flex font-headline-md text-sm text-on-surface-variant tracking-wide font-bold uppercase" data-i18n="doc_title">Pipeline de GovernanÃ§a</div>
 
   <!-- Right side -->
   <div class="flex gap-2 items-center justify-end">
@@ -223,7 +223,7 @@
   <div class="text-center max-w-3xl mx-auto mb-md">
     <h1 class="font-headline-lg text-headline-lg text-primary mb-sm" data-i18n="pipeline_headline">Pipeline de Funcionamento do Framework</h1>
     <p class="text-on-surface-variant leading-relaxed text-justify" data-i18n="pipeline_desc">
-      O FrameCode VibeWork opera de forma estruturada e modular. Selecione um cenário abaixo para ver o mapa visual de como a inteligência artificial interage com os arquivos de governança documental em cada uma das fases do pipeline.
+      O FrameCode VibeWork opera de forma estruturada e modular. Selecione um cenÃ¡rio abaixo para ver o mapa visual de como a inteligÃªncia artificial interage com os arquivos de governanÃ§a documental em cada uma das fases do pipeline.
     </p>
   </div>
 
@@ -235,9 +235,9 @@
       <div class="glass-card p-md rounded-xl flex flex-col gap-sm">
         <h3 class="font-headline-md text-headline-md text-primary flex items-center gap-2" data-i18n="scenario_section">
           <span class="material-symbols-outlined">settings_suggest</span>
-          Cenários de Trabalho
+          CenÃ¡rios de Trabalho
         </h3>
-        <p class="text-xs text-on-surface-variant mb-2" data-i18n="select_scenario_help">Escolha um cenário para atualizar o pipeline gráfico:</p>
+        <p class="text-xs text-on-surface-variant mb-2" data-i18n="select_scenario_help">Escolha um cenÃ¡rio para atualizar o pipeline grÃ¡fico:</p>
         
         <!-- Scenarios list -->
         <div class="flex flex-col gap-xs" id="scenario-list">
@@ -260,7 +260,7 @@
           <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="refactoring">
             <span class="flex items-center gap-sm">
               <span class="material-symbols-outlined text-tertiary">design_services</span>
-              <span>Refatoração de Código</span>
+              <span>RefatoraÃ§Ã£o de CÃ³digo</span>
             </span>
             <span class="material-symbols-outlined text-xs">chevron_right</span>
           </button>
@@ -268,7 +268,7 @@
           <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="audit">
             <span class="flex items-center gap-sm">
               <span class="material-symbols-outlined text-primary">gavel</span>
-              <span>Segurança e Auditoria</span>
+              <span>SeguranÃ§a e Auditoria</span>
             </span>
             <span class="material-symbols-outlined text-xs">chevron_right</span>
           </button>
@@ -276,7 +276,79 @@
           <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="instantiation">
             <span class="flex items-center gap-sm">
               <span class="material-symbols-outlined text-primary-fixed-dim">rocket_launch</span>
-              <span>Instanciação de Novo Projeto</span>
+              <span>InstanciaÃ§Ã£o de Novo Projeto</span>
+            </span>
+            <span class="material-symbols-outlined text-xs">chevron_right</span>
+          </button>
+          
+          <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="ui_components">
+            <span class="flex items-center gap-sm">
+              <span class="material-symbols-outlined text-primary">palette</span>
+              <span>UI / Componentes</span>
+            </span>
+            <span class="material-symbols-outlined text-xs">chevron_right</span>
+          </button>
+          
+          <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="app_module_docs">
+            <span class="flex items-center gap-sm">
+              <span class="material-symbols-outlined text-secondary">description</span>
+              <span>App Module Docs</span>
+            </span>
+            <span class="material-symbols-outlined text-xs">chevron_right</span>
+          </button>
+          
+          <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="release">
+            <span class="flex items-center gap-sm">
+              <span class="material-symbols-outlined text-tertiary">rocket</span>
+              <span>Release / Publishing</span>
+            </span>
+            <span class="material-symbols-outlined text-xs">chevron_right</span>
+          </button>
+          
+          <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="retroactive">
+            <span class="flex items-center gap-sm">
+              <span class="material-symbols-outlined text-primary-fixed-dim">history</span>
+              <span>InstanciaÃ§Ã£o Retroativa</span>
+            </span>
+            <span class="material-symbols-outlined text-xs">chevron_right</span>
+          </button>
+          
+          <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="wiki_knowledge">
+            <span class="flex items-center gap-sm">
+              <span class="material-symbols-outlined text-secondary">menu_book</span>
+              <span>Wiki / Knowledge</span>
+            </span>
+            <span class="material-symbols-outlined text-xs">chevron_right</span>
+          </button>
+          
+          <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="pr_review">
+            <span class="flex items-center gap-sm">
+              <span class="material-symbols-outlined text-primary">code_review</span>
+              <span>PR / Code Review</span>
+            </span>
+            <span class="material-symbols-outlined text-xs">chevron_right</span>
+          </button>
+          
+          <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="deploy_environment">
+            <span class="flex items-center gap-sm">
+              <span class="material-symbols-outlined text-tertiary">cloud_upload</span>
+              <span>Deploy / Environment</span>
+            </span>
+            <span class="material-symbols-outlined text-xs">chevron_right</span>
+          </button>
+          
+          <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="multi_agent">
+            <span class="flex items-center gap-sm">
+              <span class="material-symbols-outlined text-secondary">workspaces</span>
+              <span>Multi-Agent / Collab.</span>
+            </span>
+            <span class="material-symbols-outlined text-xs">chevron_right</span>
+          </button>
+          
+          <button class="scenario-select-btn w-full text-left p-sm rounded-lg border border-outline-variant/30 bg-surface-container-low hover:border-primary/50 text-sm font-bold flex items-center justify-between transition-all" data-scenario="git_commit">
+            <span class="flex items-center gap-sm">
+              <span class="material-symbols-outlined text-primary">commit</span>
+              <span>Git / Commit / Tag</span>
             </span>
             <span class="material-symbols-outlined text-xs">chevron_right</span>
           </button>
@@ -285,14 +357,14 @@
 
       <!-- Info Details Card -->
       <div class="glass-card p-md rounded-xl flex flex-col gap-base border-t-2 border-primary" id="scenario-details-card">
-        <h4 class="font-headline-md text-sm text-primary uppercase tracking-wide" id="active-scenario-title">Cenário Ativo</h4>
-        <p class="text-on-surface-variant text-sm text-justify" id="active-scenario-desc">Selecione um cenário para carregar os detalhes.</p>
+        <h4 class="font-headline-md text-sm text-primary uppercase tracking-wide" id="active-scenario-title">CenÃ¡rio Ativo</h4>
+        <p class="text-on-surface-variant text-sm text-justify" id="active-scenario-desc">Selecione um cenÃ¡rio para carregar os detalhes.</p>
         <div class="pt-sm border-t border-outline-variant/20 flex flex-col gap-xs text-xs text-on-surface-variant">
-          <span class="font-bold text-primary" data-i18n="rules_compliance">Regras de Governança Ativas:</span>
+          <span class="font-bold text-primary" data-i18n="rules_compliance">Regras de GovernanÃ§a Ativas:</span>
           <ul class="list-disc pl-4 flex flex-col gap-1 mt-1">
-            <li data-i18n="rule_1">Plano obrigatório em Plans/ antes da edição</li>
-            <li data-i18n="rule_2">Checklist de tarefas gerenciado em task.md</li>
-            <li data-i18n="rule_3">Changelog fragmentado e fechamento de sessão</li>
+            <li data-i18n="rule_1">Plano obrigatÃ³rio em Plans/ antes da ediÃ§Ã£o</li>
+            <li data-i18n="rule_2">Checklist de tarefas via Plans + write_todos</li>
+            <li data-i18n="rule_3">Changelog fragmentado e fechamento de sessÃ£o</li>
           </ul>
         </div>
       </div>
@@ -345,7 +417,7 @@
         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
       </a>
     </div>
-    <p class="font-body-md text-body-md text-on-surface-variant">© 2026 FrameCode VibeWork.</p>
+    <p class="font-body-md text-body-md text-on-surface-variant">Â© 2026 FrameCode VibeWork.</p>
   </div>
 </footer>
 
@@ -353,23 +425,23 @@
 // Translations system
 const translations = {
     pt: {
-        doc_page_title: "FrameCode VibeWork - Pipeline de Governança",
+        doc_page_title: "FrameCode VibeWork - Pipeline de GovernanÃ§a",
         back_btn: "Voltar para Home",
-        doc_title: "Pipeline de Governança",
-        buy_coffee: "Café",
+        doc_title: "Pipeline de GovernanÃ§a",
+        buy_coffee: "CafÃ©",
         pipeline_headline: "pipeline",
-        pipeline_desc: "O FrameCode VibeWork opera de forma estruturada e modular. Selecione um cenário de desenvolvimento à esquerda para visualizar como os agentes e as IAs leem, modificam ou criam os arquivos canônicos de governança ao longo do fluxo de execução.",
-        scenario_section: "Cenários de Trabalho",
-        select_scenario_help: "Escolha um cenário para atualizar o pipeline gráfico:",
-        rules_compliance: "Regras de Governança Ativas:",
-        rule_1: "Plano obrigatório em Plans/ antes de qualquer mudança de código.",
-        rule_2: "Checklist de tarefas em task.md para manter a IA orientada.",
-        rule_3: "Fragmento de changelog gerado ao final de cada alteração.",
+        pipeline_desc: "O FrameCode VibeWork opera de forma estruturada e modular. Selecione um cenÃ¡rio de desenvolvimento Ã  esquerda para visualizar como os agentes e as IAs leem, modificam ou criam os arquivos canÃ´nicos de governanÃ§a ao longo do fluxo de execuÃ§Ã£o.",
+        scenario_section: "CenÃ¡rios de Trabalho",
+        select_scenario_help: "Escolha um cenÃ¡rio para atualizar o pipeline grÃ¡fico:",
+        rules_compliance: "Regras de GovernanÃ§a Ativas:",
+        rule_1: "Plano obrigatÃ³rio em Plans/ antes de qualquer mudanÃ§a de cÃ³digo.",
+        rule_2: "Checklist de tarefas via Plans + write_todos para manter a IA orientada.",
+        rule_3: "Fragmento de changelog gerado ao final de cada alteraÃ§Ã£o.",
         pipeline_flow_title: "Fases",
         badge_read: "Leitura (R)",
         badge_write: "Escrita (W)",
-        badge_create: "Criação (C)",
-        badge_verify: "Validação (V)"
+        badge_create: "CriaÃ§Ã£o (C)",
+        badge_verify: "ValidaÃ§Ã£o (V)"
     },
     en: {
         doc_page_title: "FrameCode VibeWork - Governance Pipeline",
@@ -382,8 +454,8 @@ const translations = {
         select_scenario_help: "Select a scenario to update the graphical pipeline:",
         rules_compliance: "Active Governance Rules:",
         rule_1: "Mandatory plan in Plans/ before any code changes.",
-        rule_2: "Task checklist in task.md to keep the AI focused.",
-        rule_3: "Changelog fragment created at the end of each session.",
+        rule_2: "Task checklist via Plans + write_todos to keep the AI focused.",
+        rule_3: "Consolidated changelog in V*.md + session synthesis at close.",
         pipeline_flow_title: "Phases",
         badge_read: "Read (R)",
         badge_write: "Write (W)",
@@ -394,34 +466,34 @@ const translations = {
         doc_page_title: "FrameCode VibeWork - Pipeline de Gobernanza",
         back_btn: "Volver a Inicio",
         doc_title: "Pipeline de Gobernanza",
-        buy_coffee: "Café",
+        buy_coffee: "CafÃ©",
         pipeline_headline: "pipeline",
-        pipeline_desc: "FrameCode VibeWork opera de manera estructurada y modular. Seleccione un escenario de desarrollo a la izquierda para visualizar cómo la IA lee, escribe o crea los archivos canónicos de gobernanza a lo largo del flujo de ejecución.",
+        pipeline_desc: "FrameCode VibeWork opera de manera estructurada y modular. Seleccione un escenario de desarrollo a la izquierda para visualizar cÃ³mo la IA lee, escribe o crea los archivos canÃ³nicos de gobernanza a lo largo del flujo de ejecuciÃ³n.",
         scenario_section: "Escenarios de Trabajo",
-        select_scenario_help: "Seleccione un escenario para actualizar el pipeline gráfico:",
+        select_scenario_help: "Seleccione un escenario para actualizar el pipeline grÃ¡fico:",
         rules_compliance: "Reglas de Gobernanza Activas:",
-        rule_1: "Plan obligatorio en Plans/ antes de cualquier cambio de código.",
-        rule_2: "Lista de tareas en task.md para mantener a la IA orientada.",
-        rule_3: "Fragmento de changelog generado al final de cada modificación.",
+        rule_1: "Plan obligatorio en Plans/ antes de cualquier cambio de cÃ³digo.",
+        rule_2: "Lista de tareas via Plans + write_todos para mantener a la IA orientada.",
+        rule_3: "Changelog consolidado en V*.md + sÃ­ntesis de sesiÃ³n al cierre.",
         pipeline_flow_title: "Fases",
         badge_read: "Lectura (R)",
         badge_write: "Escritura (W)",
-        badge_create: "Creación (C)",
-        badge_verify: "Validación (V)"
+        badge_create: "CreaciÃ³n (C)",
+        badge_verify: "ValidaciÃ³n (V)"
     },
     de: {
         doc_page_title: "FrameCode VibeWork - Governance-Pipeline",
-        back_btn: "Zurück zur Startseite",
+        back_btn: "ZurÃ¼ck zur Startseite",
         doc_title: "Governance-Pipeline",
         buy_coffee: "Kaffee",
         pipeline_headline: "pipeline",
-        pipeline_desc: "FrameCode VibeWork arbeitet strukturiert und modular. Wählen Sie links ein Entwicklungsszenario aus, um zu visualisieren, wie die KI die kanonischen Governance-Dateien während des gesamten Ausführungsflusses liest, ändert oder erstellt.",
+        pipeline_desc: "FrameCode VibeWork arbeitet strukturiert und modular. WÃ¤hlen Sie links ein Entwicklungsszenario aus, um zu visualisieren, wie die KI die kanonischen Governance-Dateien wÃ¤hrend des gesamten AusfÃ¼hrungsflusses liest, Ã¤ndert oder erstellt.",
         scenario_section: "Arbeitsszenarien",
-        select_scenario_help: "Wählen Sie ein Szenario aus, um die grafische Pipeline zu aktualisieren:",
+        select_scenario_help: "WÃ¤hlen Sie ein Szenario aus, um die grafische Pipeline zu aktualisieren:",
         rules_compliance: "Aktive Governance-Regeln:",
-        rule_1: "Pflichtplan in Plans/ vor jeder Codeänderung.",
-        rule_2: "Aufgaben-Checkliste in task.md, um die KI fokussiert zu halten.",
-        rule_3: "Changelog-Fragment am Ende jeder Änderung erstellt.",
+        rule_1: "Pflichtplan in Plans/ vor jeder CodeÃ¤nderung.",
+        rule_2: "Aufgaben-Checkliste via Plans + write_todos, um die KI fokussiert zu halten.",
+        rule_3: "Changelog in V*.md konsolidiert + Sitzungssynthese beim Abschluss.",
         pipeline_flow_title: "Phasen",
         badge_read: "Lesen (R)",
         badge_write: "Schreiben (W)",
@@ -435,71 +507,71 @@ const scenarioData = {
     pt: {
         bugfix: {
             title: "Bugfix / Troubleshooting",
-            desc: "Procedimento sistemático para diagnosticar problemas relatados e implementar correções sem introduzir novas falhas na aplicação.",
+            desc: "Procedimento sistemÃ¡tico para diagnosticar problemas relatados e implementar correÃ§Ãµes sem introduzir novas falhas na aplicaÃ§Ã£o.",
             steps: [
                 {
-                    phase: "Fase 1: Ingestão de Contexto",
-                    action: "A IA começa lendo as diretivas fundamentais de execução contidas no arquivo raiz para entender as restrições operacionais.",
+                    phase: "Fase 1: IngestÃ£o de Contexto",
+                    action: "A IA comeÃ§a lendo as diretivas fundamentais de execuÃ§Ã£o contidas no arquivo raiz para entender as restriÃ§Ãµes operacionais.",
                     files: [{ name: "AGENTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }]
                 },
                 {
-                    phase: "Fase 2: Sincronização e Investigação",
-                    action: "A IA busca regras e padrões de resolução de problemas conhecidos na base e recupera a memória incremental das sessões recentes.",
+                    phase: "Fase 2: SincronizaÃ§Ã£o e InvestigaÃ§Ã£o",
+                    action: "A IA busca regras e padrÃµes de resoluÃ§Ã£o de problemas conhecidos na base e recupera a memÃ³ria incremental das sessÃµes recentes.",
                     files: [
                         { name: "FCVW/TROUBLESHOOTING.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
-                        { name: "wiki/sessions/ (últimas)", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                        { name: "wiki/sessions/ (Ãºltimas)", mode: "Leitura (R)", color: "border-secondary text-secondary" }
                     ]
                 },
                 {
-                    phase: "Fase 3: Planejamento Mandatório",
-                    action: "Antes de escrever qualquer código, a IA cria um plano estruturado de correção contendo causa raiz, riscos e critérios de aceitação, além de inicializar a lista de tarefas.",
+                    phase: "Fase 3: Planejamento MandatÃ³rio",
+                    action: "Antes de escrever qualquer cÃ³digo, a IA cria um plano estruturado de correÃ§Ã£o contendo causa raiz, riscos e critÃ©rios de aceitaÃ§Ã£o, alÃ©m de inicializar a lista de tarefas.",
                     files: [
-                        { name: "Plans/pending/{bugfix}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "task.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" }
+                        { name: "Plans/pending/{bugfix}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
                     ]
                 },
                 {
-                    phase: "Fase 4: Execução da Correção",
-                    action: "O plano é movido para andamento e a IA altera estritamente os arquivos com bug no código fonte da aplicação, documentando cada micro-tarefa finalizada.",
+                    phase: "Fase 4: ExecuÃ§Ã£o da CorreÃ§Ã£o",
+                    action: "O plano Ã© movido para andamento e a IA altera estritamente os arquivos com bug no cÃ³digo fonte da aplicaÃ§Ã£o, documentando cada micro-tarefa finalizada.",
                     files: [
                         { name: "Plans/in_progress/{bugfix}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
-                        { name: "Código da Aplicação", mode: "Escrita (W)", color: "border-primary text-primary" },
+                        { name: "CÃ³digo da AplicaÃ§Ã£o", mode: "Escrita (W)", color: "border-primary text-primary" },
                         { name: "task.md", mode: "Escrita (W)", color: "border-primary text-primary" }
                     ]
                 },
                 {
-                    phase: "Fase 5: Validação Físico-Lógica",
-                    action: "A IA consulta a estratégia de testes do projeto e executa as validações para garantir que a causa raiz foi eliminada e não há regressões no sistema.",
+                    phase: "Fase 5: ValidaÃ§Ã£o FÃ­sico-LÃ³gica",
+                    action: "A IA consulta a estratÃ©gia de testes do projeto e executa as validaÃ§Ãµes para garantir que a causa raiz foi eliminada e nÃ£o hÃ¡ regressÃµes no sistema.",
                     files: [
                         { name: "FCVW/TESTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
-                        { name: "Suíte de Testes (Terminal)", mode: "Validação (V)", color: "border-error text-error" }
+                        { name: "SuÃ­te de Testes (Terminal)", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
                     ]
                 },
                 {
-                    phase: "Fase 6: Log e Rotação de Memória",
-                    action: "Cria um fragmento de changelog detalhando as alterações, move o plano para a pasta de concluídos e gera uma nova síntese da sessão na wiki.",
+                    phase: "Fase 6: Log e RotaÃ§Ã£o de MemÃ³ria",
+                    action: "Cria um fragmento de changelog detalhando as alteraÃ§Ãµes, move o plano para a pasta de concluÃ­dos e gera uma nova sÃ­ntese da sessÃ£o na wiki.",
                     files: [
-                        { name: "changelogs/unreleased/{bugfix}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "Plans/completed/{bugfix}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "wiki/sessions/{session}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" }
+                        { name: "changelogs/unreleased/{bugfix}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{bugfix}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
                     ]
                 }
             ]
         },
         new_feature: {
             title: "Implementar Nova Feature",
-            desc: "Adição de novas regras de negócio ou telas à aplicação de forma governada, respeitando os limites de escopo e o design system declarativo.",
+            desc: "AdiÃ§Ã£o de novas regras de negÃ³cio ou telas Ã  aplicaÃ§Ã£o de forma governada, respeitando os limites de escopo e o design system declarativo.",
             steps: [
                 {
-                    phase: "Fase 1: Ingestão e Alinhamento",
-                    action: "Verificação das regras gerais operacionais e dos princípios fundamentais da arquitetura do projeto.",
+                    phase: "Fase 1: IngestÃ£o e Alinhamento",
+                    action: "VerificaÃ§Ã£o das regras gerais operacionais e dos princÃ­pios fundamentais da arquitetura do projeto.",
                     files: [
                         { name: "AGENTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/MANIFEST.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
                     ]
                 },
                 {
-                    phase: "Fase 2: Limitação de Fronteiras",
+                    phase: "Fase 2: LimitaÃ§Ã£o de Fronteiras",
                     action: "A IA analisa os limites funcionais permitidos no escopo da sprint e extrai os tokens e componentes declarativos de estilo.",
                     files: [
                         { name: "FCVW/SCOPE.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
@@ -508,109 +580,109 @@ const scenarioData = {
                 },
                 {
                     phase: "Fase 3: Planejamento Estruturado",
-                    action: "Criação de um plano completo contendo o blueprint técnico da nova funcionalidade e inicialização da lista de tarefas.",
+                    action: "CriaÃ§Ã£o de um plano completo contendo o blueprint tÃ©cnico da nova funcionalidade e inicializaÃ§Ã£o da lista de tarefas.",
                     files: [
-                        { name: "Plans/pending/{feature}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "task.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" }
+                        { name: "Plans/pending/{feature}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
                     ]
                 },
                 {
-                    phase: "Fase 4: Desenvolvimento e Construção",
-                    action: "A IA escreve os novos componentes, rotas e lógica dentro da estrutura declarada, atualizando o progresso das tarefas em tempo real.",
+                    phase: "Fase 4: Desenvolvimento e ConstruÃ§Ã£o",
+                    action: "A IA escreve os novos componentes, rotas e lÃ³gica dentro da estrutura declarada, atualizando o progresso das tarefas em tempo real.",
                     files: [
                         { name: "Plans/in_progress/{feature}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
-                        { name: "Novos Arquivos de Código", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Novos Arquivos de CÃ³digo", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
                         { name: "task.md", mode: "Escrita (W)", color: "border-primary text-primary" }
                     ]
                 },
                 {
-                    phase: "Fase 5: Testes e Auditoria de Segurança",
-                    action: "Execução de testes unitários/integração e validação estática de segurança para prevenir vazamentos de credenciais ou vulnerabilidades.",
+                    phase: "Fase 5: Testes e Auditoria de SeguranÃ§a",
+                    action: "ExecuÃ§Ã£o de testes unitÃ¡rios/integraÃ§Ã£o e validaÃ§Ã£o estÃ¡tica de seguranÃ§a para prevenir vazamentos de credenciais ou vulnerabilidades.",
                     files: [
                         { name: "FCVW/TESTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/SECURITY.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
-                        { name: "Linter & Test Suite", mode: "Validação (V)", color: "border-error text-error" }
+                        { name: "Linter & Test Suite", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
                     ]
                 },
                 {
-                    phase: "Fase 6: Consolidação",
-                    action: "Publicação do fragmento de changelog, atualização do plano final e gravação de memória incremental para os próximos agentes.",
+                    phase: "Fase 6: ConsolidaÃ§Ã£o",
+                    action: "PublicaÃ§Ã£o do fragmento de changelog, atualizaÃ§Ã£o do plano final e gravaÃ§Ã£o de memÃ³ria incremental para os prÃ³ximos agentes.",
                     files: [
-                        { name: "changelogs/unreleased/{feature}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "Plans/completed/{feature}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "wiki/sessions/{session}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" }
+                        { name: "changelogs/unreleased/{feature}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{feature}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
                     ]
                 }
             ]
         },
         refactoring: {
-            title: "Refatoração de Código",
-            desc: "Limpeza de débito técnico, melhoria da legibilidade do código e otimização sem alterar o comportamento externo observado pelo usuário.",
+            title: "RefatoraÃ§Ã£o de CÃ³digo",
+            desc: "Limpeza de dÃ©bito tÃ©cnico, melhoria da legibilidade do cÃ³digo e otimizaÃ§Ã£o sem alterar o comportamento externo observado pelo usuÃ¡rio.",
             steps: [
                 {
-                    phase: "Fase 1: Ingestão de Contexto",
-                    action: "Recuperação do guia básico de conduta e conduta operacional de desenvolvimento da IA.",
+                    phase: "Fase 1: IngestÃ£o de Contexto",
+                    action: "RecuperaÃ§Ã£o do guia bÃ¡sico de conduta e conduta operacional de desenvolvimento da IA.",
                     files: [{ name: "AGENTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }]
                 },
                 {
-                    phase: "Fase 2: Análise de Riscos e Estrutura",
-                    action: "A IA consulta o guia de refatoração para identificar o nível de risco (R1 a R5) e carrega a árvore física atual do diretório.",
+                    phase: "Fase 2: AnÃ¡lise de Riscos e Estrutura",
+                    action: "A IA consulta o guia de refatoraÃ§Ã£o para identificar o nÃ­vel de risco (R1 a R5) e carrega a Ã¡rvore fÃ­sica atual do diretÃ³rio.",
                     files: [
                         { name: "FCVW/REFACTORING.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/FILESYSTEM.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
                     ]
                 },
                 {
-                    phase: "Fase 3: Elaboração do Plano de Refatoração",
-                    action: "Cria o plano de refatoração definindo metas de métricas, plano de rollback (caso ocorram erros) e a lista detalhada de tarefas.",
+                    phase: "Fase 3: ElaboraÃ§Ã£o do Plano de RefatoraÃ§Ã£o",
+                    action: "Cria o plano de refatoraÃ§Ã£o definindo metas de mÃ©tricas, plano de rollback (caso ocorram erros) e a lista detalhada de tarefas.",
                     files: [
-                        { name: "Plans/pending/{refactor}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "task.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" }
+                        { name: "Plans/pending/{refactor}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
                     ]
                 },
                 {
-                    phase: "Fase 4: Aplicação da Limpeza",
-                    action: "Modifica o código de forma isolada, incrementando a legibilidade e garantindo conformidade com a estrutura planejada.",
+                    phase: "Fase 4: AplicaÃ§Ã£o da Limpeza",
+                    action: "Modifica o cÃ³digo de forma isolada, incrementando a legibilidade e garantindo conformidade com a estrutura planejada.",
                     files: [
                         { name: "Plans/in_progress/{refactor}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
-                        { name: "Código da Aplicação", mode: "Escrita (W)", color: "border-primary text-primary" }
+                        { name: "CÃ³digo da AplicaÃ§Ã£o", mode: "Escrita (W)", color: "border-primary text-primary" }
                     ]
                 },
                 {
                     phase: "Fase 5: Cobertura e Desempenho",
-                    action: "Executa a suíte de testes com foco especial em evitar regressões e verifica o desempenho de carregamento e execução do código.",
+                    action: "Executa a suÃ­te de testes com foco especial em evitar regressÃµes e verifica o desempenho de carregamento e execuÃ§Ã£o do cÃ³digo.",
                     files: [
                         { name: "FCVW/TESTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/PERFORMANCE.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
-                        { name: "Testes de Integração", mode: "Validação (V)", color: "border-error text-error" }
+                        { name: "Testes de IntegraÃ§Ã£o", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
                     ]
                 },
                 {
-                    phase: "Fase 6: Registro Técnico",
-                    action: "Gera o fragmento de changelog contendo os ganhos de código obtidos e compila a nova memória de sessão na wiki.",
+                    phase: "Fase 6: Registro TÃ©cnico",
+                    action: "Gera o fragmento de changelog contendo os ganhos de cÃ³digo obtidos e compila a nova memÃ³ria de sessÃ£o na wiki.",
                     files: [
-                        { name: "changelogs/unreleased/{refactor}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "Plans/completed/{refactor}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "wiki/sessions/{session}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" }
+                        { name: "changelogs/unreleased/{refactor}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{refactor}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
                     ]
                 }
             ]
         },
         audit: {
-            title: "Segurança e Auditoria",
-            desc: "Validação pré-entrega e auditoria de conformidade para atestar a segurança e a integridade de dados e ambientes.",
+            title: "SeguranÃ§a e Auditoria",
+            desc: "ValidaÃ§Ã£o prÃ©-entrega e auditoria de conformidade para atestar a seguranÃ§a e a integridade de dados e ambientes.",
             steps: [
                 {
                     phase: "Fase 1: Alinhamento Geral",
-                    action: "Ingestão das instruções iniciais e das regras e princípios inegociáveis declarados no manifesto do projeto.",
+                    action: "IngestÃ£o das instruÃ§Ãµes iniciais e das regras e princÃ­pios inegociÃ¡veis declarados no manifesto do projeto.",
                     files: [
                         { name: "AGENTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/MANIFEST.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
                     ]
                 },
                 {
-                    phase: "Fase 2: Extração de Políticas de Segurança",
-                    action: "A IA mapeia políticas de tratamento de dados sensíveis, sanitização de logs e configurações de variáveis do ambiente.",
+                    phase: "Fase 2: ExtraÃ§Ã£o de PolÃ­ticas de SeguranÃ§a",
+                    action: "A IA mapeia polÃ­ticas de tratamento de dados sensÃ­veis, sanitizaÃ§Ã£o de logs e configuraÃ§Ãµes de variÃ¡veis do ambiente.",
                     files: [
                         { name: "FCVW/SECURITY.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/DATA.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
@@ -618,47 +690,47 @@ const scenarioData = {
                     ]
                 },
                 {
-                    phase: "Fase 3: Plano de Correção ou Análise",
-                    action: "Estruturação de um plano detalhado para cobrir as brechas de conformidade encontradas.",
+                    phase: "Fase 3: Plano de CorreÃ§Ã£o ou AnÃ¡lise",
+                    action: "EstruturaÃ§Ã£o de um plano detalhado para cobrir as brechas de conformidade encontradas.",
                     files: [
-                        { name: "Plans/pending/{audit}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "task.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" }
+                        { name: "Plans/pending/{audit}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
                     ]
                 },
                 {
-                    phase: "Fase 4: Sanitização e Correção",
-                    action: "O plano é colocado em execução. A IA oculta dados sensíveis, reorganiza chaves e aplica patches de segurança necessários.",
+                    phase: "Fase 4: SanitizaÃ§Ã£o e CorreÃ§Ã£o",
+                    action: "O plano Ã© colocado em execuÃ§Ã£o. A IA oculta dados sensÃ­veis, reorganiza chaves e aplica patches de seguranÃ§a necessÃ¡rios.",
                     files: [
                         { name: "Plans/in_progress/{audit}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
-                        { name: "Configurações (.env / Código)", mode: "Escrita (W)", color: "border-primary text-primary" }
+                        { name: "ConfiguraÃ§Ãµes (.env / CÃ³digo)", mode: "Escrita (W)", color: "border-primary text-primary" }
                     ]
                 },
                 {
-                    phase: "Fase 5: Execução do Relatório de Auditoria",
-                    action: "A IA lê as instruções de fechamento de release e gera um checklist auditável completo de conformidade técnica.",
+                    phase: "Fase 5: ExecuÃ§Ã£o do RelatÃ³rio de Auditoria",
+                    action: "A IA lÃª as instruÃ§Ãµes de fechamento de release e gera um checklist auditÃ¡vel completo de conformidade tÃ©cnica.",
                     files: [
                         { name: "FCVW/AUDIT.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
-                        { name: "Relatório de Conformidade (AUDIT.md)", mode: "Validação (V)", color: "border-error text-error" }
+                        { name: "RelatÃ³rio de Conformidade (AUDIT.md)", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
                     ]
                 },
                 {
                     phase: "Fase 6: Fechamento de Auditoria",
-                    action: "Atualiza os changelogs, move o plano para concluído e salva o estado de integridade auditada na base de memórias da IA.",
+                    action: "Atualiza os changelogs, move o plano para concluÃ­do e salva o estado de integridade auditada na base de memÃ³rias da IA.",
                     files: [
-                        { name: "changelogs/unreleased/{audit}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "Plans/completed/{audit}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "wiki/sessions/{session}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" }
+                        { name: "changelogs/unreleased/{audit}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{audit}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
                     ]
                 }
             ]
         },
         instantiation: {
-            title: "Instanciação de Novo Projeto",
-            desc: "Criação da estrutura de governança ou migração retroativa de um projeto legado para a metodologia modular do FCVW.",
+            title: "InstanciaÃ§Ã£o de Novo Projeto",
+            desc: "CriaÃ§Ã£o da estrutura de governanÃ§a ou migraÃ§Ã£o retroativa de um projeto legado para a metodologia modular do FCVW.",
             steps: [
                 {
-                    phase: "Fase 1: Ingestão de Regras",
-                    action: "Leitura dos guias iniciais de scaffolding operacional de novos repositórios.",
+                    phase: "Fase 1: IngestÃ£o de Regras",
+                    action: "Leitura dos guias iniciais de scaffolding operacional de novos repositÃ³rios.",
                     files: [
                         { name: "AGENTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/INSTANTIATION.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
@@ -666,7 +738,7 @@ const scenarioData = {
                 },
                 {
                     phase: "Fase 2: Descoberta e Contexto",
-                    action: "A IA executa o briefing inicial com o usuário (Fase 0) e define o carregamento seletivo de documentos com base nas tecnologias.",
+                    action: "A IA executa o briefing inicial com o usuÃ¡rio (Fase 0) e define o carregamento seletivo de documentos com base nas tecnologias.",
                     files: [
                         { name: "FCVW/BRIEFING.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/CONTEXT_MAP.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
@@ -674,35 +746,522 @@ const scenarioData = {
                 },
                 {
                     phase: "Fase 3: Planejamento do Scaffold",
-                    action: "Geração do plano estruturado descrevendo quais arquivos canônicos serão criados e como as regras serão aplicadas na estrutura física.",
+                    action: "GeraÃ§Ã£o do plano estruturado descrevendo quais arquivos canÃ´nicos serÃ£o criados e como as regras serÃ£o aplicadas na estrutura fÃ­sica.",
                     files: [
-                        { name: "Plans/pending/{bootstrap}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "task.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" }
+                        { name: "Plans/pending/{bootstrap}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
                     ]
                 },
                 {
-                    phase: "Fase 4: Inicialização Física",
-                    action: "A IA cria a pasta governada, povoa os templates mínimos, configura a stack e o escopo inicial aprovados pelo usuário.",
+                    phase: "Fase 4: InicializaÃ§Ã£o FÃ­sica",
+                    action: "A IA cria a pasta governada, povoa os templates mÃ­nimos, configura a stack e o escopo inicial aprovados pelo usuÃ¡rio.",
                     files: [
                         { name: "Plans/in_progress/{bootstrap}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
-                        { name: "Estrutura FCVW/* (Pastas)", mode: "Criação (C)", color: "border-tertiary text-tertiary" }
+                        { name: "Estrutura FCVW/* (Pastas)", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
                     ]
                 },
                 {
-                    phase: "Fase 5: Validação da Estrutura",
-                    action: "Execução do linter e testes de sanidade estrutural para atestar a conformidade física da governança recém-criada.",
+                    phase: "Fase 5: ValidaÃ§Ã£o da Estrutura",
+                    action: "ExecuÃ§Ã£o do linter e testes de sanidade estrutural para atestar a conformidade fÃ­sica da governanÃ§a recÃ©m-criada.",
                     files: [
                         { name: "FCVW/TESTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
-                        { name: "Governance Linter Check", mode: "Validação (V)", color: "border-error text-error" }
+                        { name: "Governance Linter Check", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
                     ]
                 },
                 {
-                    phase: "Fase 6: Gravação Histórica",
-                    action: "Gera o log de setup inicial do repositório, arquiva o plano concluído e salva o primeiro snapshot da wiki de sessão.",
+                    phase: "Fase 6: GravaÃ§Ã£o HistÃ³rica",
+                    action: "Gera o log de setup inicial do repositÃ³rio, arquiva o plano concluÃ­do e salva o primeiro snapshot da wiki de sessÃ£o.",
                     files: [
-                        { name: "changelogs/unreleased/{init}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "Plans/completed/{bootstrap}.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" },
-                        { name: "wiki/sessions/000_setup.md", mode: "Criação (C)", color: "border-tertiary text-tertiary" }
+                        { name: "changelogs/unreleased/{init}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{bootstrap}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/000_setup.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                }
+            ]
+        },
+        ui_components: {
+            title: "UI / Componentes",
+            desc: "ImplementaÃ§Ã£o e manutenÃ§Ã£o de componentes de interface seguindo o design system declarativo.",
+            steps: [
+                {
+                    phase: "Fase 1: IngestÃ£o de Design",
+                    action: "A IA carrega as regras operacionais e o design system declarativo para alinhamento visual.",
+                    files: [
+                        { name: "AGENTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/DESIGN.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 2: Consulta de PadrÃµes",
+                    action: "A IA busca padrÃµes de componentes na wiki tÃ©cnica para reuso.",
+                    files: [
+                        { name: "wiki/patterns/", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 3: Plano de Componente",
+                    action: "CriaÃ§Ã£o do plano detalhando a estrutura do componente, props e variantes.",
+                    files: [
+                        { name: "Plans/pending/{ui}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 4: ImplementaÃ§Ã£o Visual",
+                    action: "A IA implementa o componente seguindo os tokens e regras do DESIGN.md.",
+                    files: [
+                        { name: "Plans/in_progress/{ui}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
+                        { name: "Componentes de UI", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 5: ValidaÃ§Ã£o Visual",
+                    action: "VerificaÃ§Ã£o de contraste, acessibilidade e consistÃªncia com o design system.",
+                    files: [
+                        { name: "FCVW/TESTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "Testes de Componente", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
+                    ]
+                },
+                {
+                    phase: "Fase 6: Registro",
+                    action: "GeraÃ§Ã£o do fragmento de changelog e sÃ­ntese de sessÃ£o na wiki.",
+                    files: [
+                        { name: "changelogs/unreleased/{ui}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{ui}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                }
+            ]
+        },
+        app_module_docs: {
+            title: "App Module Docs",
+            desc: "DocumentaÃ§Ã£o de mÃ³dulos, telas, componentes e fluxos da aplicaÃ§Ã£o instanciada.",
+            steps: [
+                {
+                    phase: "Fase 1: Alinhamento",
+                    action: "A IA carrega as regras de documentaÃ§Ã£o de mÃ³dulos e o template apropriado.",
+                    files: [
+                        { name: "AGENTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/APPLICATION_DOCUMENTATION.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 2: Template",
+                    action: "Carregamento do template de documentaÃ§Ã£o de mÃ³dulo e do template de fluxo.",
+                    files: [
+                        { name: "governance/TEMPLATE_MODULE_DOCUMENTATION.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "governance/TEMPLATE_FLOW_DOCUMENTATION.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 3: Plano de DocumentaÃ§Ã£o",
+                    action: "CriaÃ§Ã£o do plano descrevendo quais mÃ³dulos serÃ£o documentados.",
+                    files: [
+                        { name: "Plans/pending/{docs}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 4: Escrita da DocumentaÃ§Ã£o",
+                    action: "Preenchimento dos templates com dados reais da aplicaÃ§Ã£o.",
+                    files: [
+                        { name: "Plans/in_progress/{docs}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
+                        { name: "docs/ (documentaÃ§Ã£o)", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 5: ValidaÃ§Ã£o",
+                    action: "VerificaÃ§Ã£o de links, consistÃªncia e integridade da documentaÃ§Ã£o.",
+                    files: [
+                        { name: "skills/wiki-lint", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
+                    ]
+                },
+                {
+                    phase: "Fase 6: Registro",
+                    action: "Fragmento de changelog e sÃ­ntese de sessÃ£o.",
+                    files: [
+                        { name: "changelogs/unreleased/{docs}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{docs}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                }
+            ]
+        },
+        release: {
+            title: "Release / Publishing",
+            desc: "Processo de publicaÃ§Ã£o de versÃ£o: consolidaÃ§Ã£o de changelogs, bump de versÃ£o e tag.",
+            steps: [
+                {
+                    phase: "Fase 1: PreparaÃ§Ã£o",
+                    action: "A IA carrega o checklist de release e as regras de versionamento.",
+                    files: [
+                        { name: "skills/release-checklist", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/VERSIONING.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 2: ConsolidaÃ§Ã£o",
+                    action: "ConsolidaÃ§Ã£o dos fragmentos de changelog em Vx.y.z.md e verificaÃ§Ã£o de auditoria.",
+                    files: [
+                        { name: "changelogs/unreleased/", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/AUDIT.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/RELEASE.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 3: Plano de Release",
+                    action: "CriaÃ§Ã£o do plano de release com versÃ£o alvo e pacotes afetados.",
+                    files: [
+                        { name: "Plans/pending/{release}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 4: Bump e Tag",
+                    action: "AtualizaÃ§Ã£o da versÃ£o nos manifestos e criaÃ§Ã£o da tag Git.",
+                    files: [
+                        { name: "Plans/in_progress/{release}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
+                        { name: "FCVW/MANIFEST.md", mode: "Escrita (W)", color: "border-primary text-primary" },
+                        { name: "FCVW/STACK.md", mode: "Escrita (W)", color: "border-primary text-primary" }
+                    ]
+                },
+                {
+                    phase: "Fase 5: ValidaÃ§Ã£o",
+                    action: "VerificaÃ§Ã£o pÃ³s-release e execuÃ§Ã£o de testes de fumaÃ§a.",
+                    files: [
+                        { name: "FCVW/TESTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "Testes de FumaÃ§a", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
+                    ]
+                },
+                {
+                    phase: "Fase 6: PublicaÃ§Ã£o",
+                    action: "GeraÃ§Ã£o do changelog final e sÃ­ntese de release na wiki.",
+                    files: [
+                        { name: "changelogs/Vx.y.z.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{release}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/releases/{version}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                }
+            ]
+        },
+        retroactive: {
+            title: "InstanciaÃ§Ã£o Retroativa",
+            desc: "AdoÃ§Ã£o do FCVW em projetos existentes ou legados sem destruir o histÃ³rico.",
+            steps: [
+                {
+                    phase: "Fase 1: DiagnÃ³stico",
+                    action: "A IA lÃª o guia de instanciaÃ§Ã£o retroativa e carrega o contexto do projeto existente.",
+                    files: [
+                        { name: "AGENTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/RETROACTIVE_INSTANTIATION.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 2: Mapeamento",
+                    action: "A IA mapeia a estrutura existente e identifica compatibilidades.",
+                    files: [
+                        { name: "FCVW/INSTANTIATION.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/CONTEXT_MAP.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 3: Plano de AdoÃ§Ã£o",
+                    action: "CriaÃ§Ã£o do plano de migraÃ§Ã£o com defaults nÃ£o-destrutivos.",
+                    files: [
+                        { name: "Plans/pending/{retro}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 4: ImplementaÃ§Ã£o",
+                    action: "Aplica a estrutura FCVW sem modificar cÃ³digo ou configuraÃ§Ãµes existentes.",
+                    files: [
+                        { name: "Plans/in_progress/{retro}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
+                        { name: "Estrutura FCVW/*", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 5: Integridade",
+                    action: "VerificaÃ§Ã£o de que a estrutura existente nÃ£o foi alterada.",
+                    files: [
+                        { name: "FCVW/FILESYSTEM.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "Governance Validator", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
+                    ]
+                },
+                {
+                    phase: "Fase 6: Registro",
+                    action: "Changelog de migraÃ§Ã£o e sÃ­ntese da adoÃ§Ã£o retroativa.",
+                    files: [
+                        { name: "changelogs/unreleased/{retro}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{retro}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                }
+            ]
+        },
+        wiki_knowledge: {
+            title: "Wiki / Knowledge",
+            desc: "ManutenÃ§Ã£o da memÃ³ria tÃ©cnica: lint da wiki, indexaÃ§Ã£o e sÃ­ntese de conhecimento.",
+            steps: [
+                {
+                    phase: "Fase 1: Schema",
+                    action: "A IA carrega o schema da wiki e o Ã­ndice para entender a estrutura.",
+                    files: [
+                        { name: "AGENTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/wiki/schema.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/wiki/index.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 2: Lint da Wiki",
+                    action: "ExecuÃ§Ã£o do lint para verificar links quebrados e estrutura.",
+                    files: [
+                        { name: "skills/wiki-lint", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/wiki/log.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 3: Plano de Ajustes",
+                    action: "Plano para correÃ§Ã£o de links, atualizaÃ§Ã£o de pÃ¡ginas e compressÃ£o de sessÃµes.",
+                    files: [
+                        { name: "Plans/pending/{wiki}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 4: CorreÃ§Ãµes",
+                    action: "AplicaÃ§Ã£o das correÃ§Ãµes estruturais e de conteÃºdo na wiki.",
+                    files: [
+                        { name: "Plans/in_progress/{wiki}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
+                        { name: "FCVW/wiki/ (pÃ¡ginas)", mode: "Escrita (W)", color: "border-primary text-primary" }
+                    ]
+                },
+                {
+                    phase: "Fase 5: ValidaÃ§Ã£o",
+                    action: "Re-execuÃ§Ã£o do lint e verificaÃ§Ã£o de integridade.",
+                    files: [
+                        { name: "skills/wiki-lint", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
+                    ]
+                },
+                {
+                    phase: "Fase 6: Registro",
+                    action: "Changelog das alteraÃ§Ãµes na wiki e sÃ­ntese de sessÃ£o.",
+                    files: [
+                        { name: "changelogs/unreleased/{wiki}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{wiki}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                }
+            ]
+        },
+        pr_review: {
+            title: "PR / Code Review",
+            desc: "ValidaÃ§Ã£o de Pull Requests com revisÃ£o de cÃ³digo automatizada e conformidade.",
+            steps: [
+                {
+                    phase: "Fase 1: Contexto",
+                    action: "A IA carrega as regras de code review e o guia de PR.",
+                    files: [
+                        { name: "AGENTS.md Â§Code Review", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 2: AnÃ¡lise",
+                    action: "AnÃ¡lise do diff do PR, verificaÃ§Ã£o de risco e conformidade.",
+                    files: [
+                        { name: "refactoring-guide/17", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/PLANNING.md (risk gates)", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 3: Plano de Review",
+                    action: "DocumentaÃ§Ã£o dos pontos de revisÃ£o encontrados.",
+                    files: [
+                        { name: "Plans/pending/{review}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 4: RevisÃ£o",
+                    action: "AplicaÃ§Ã£o dos comentÃ¡rios de revisÃ£o e correÃ§Ãµes necessÃ¡rias.",
+                    files: [
+                        { name: "Plans/in_progress/{review}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
+                        { name: "CÃ³digo do PR", mode: "Escrita (W)", color: "border-primary text-primary" }
+                    ]
+                },
+                {
+                    phase: "Fase 5: ValidaÃ§Ã£o",
+                    action: "ExecuÃ§Ã£o de testes e verificaÃ§Ã£o de aprovaÃ§Ã£o.",
+                    files: [
+                        { name: "FCVW/TESTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "Test Suite", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
+                    ]
+                },
+                {
+                    phase: "Fase 6: FinalizaÃ§Ã£o",
+                    action: "Registro do review e sÃ­ntese da sessÃ£o.",
+                    files: [
+                        { name: "changelogs/unreleased/{review}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{review}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                }
+            ]
+        },
+        deploy_environment: {
+            title: "Deploy / Environment",
+            desc: "Gerenciamento de ambientes, deploy e configuraÃ§Ãµes de infraestrutura.",
+            steps: [
+                {
+                    phase: "Fase 1: Contexto",
+                    action: "A IA carrega as configuraÃ§Ãµes de ambiente e regras de deploy.",
+                    files: [
+                        { name: "AGENTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "FCVW/ENVIRONMENT.md Â§5", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 2: Regras",
+                    action: "Carregamento das regras de promoÃ§Ã£o de ambiente e release.",
+                    files: [
+                        { name: "FCVW/RELEASE.md Â§Deployment", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "skills/release-checklist", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 3: Plano de Deploy",
+                    action: "CriaÃ§Ã£o do plano de deploy com ambientes alvo e rollback.",
+                    files: [
+                        { name: "Plans/pending/{deploy}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 4: ExecuÃ§Ã£o",
+                    action: "AplicaÃ§Ã£o das configuraÃ§Ãµes e execuÃ§Ã£o do deploy.",
+                    files: [
+                        { name: "Plans/in_progress/{deploy}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
+                        { name: "ConfiguraÃ§Ãµes de Ambiente", mode: "Escrita (W)", color: "border-primary text-primary" }
+                    ]
+                },
+                {
+                    phase: "Fase 5: VerificaÃ§Ã£o",
+                    action: "Testes de fumaÃ§a pÃ³s-deploy e verificaÃ§Ã£o de saÃºde.",
+                    files: [
+                        { name: "FCVW/TESTS.md", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "Health Check", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
+                    ]
+                },
+                {
+                    phase: "Fase 6: Registro",
+                    action: "Changelog do deploy e sÃ­ntese da sessÃ£o.",
+                    files: [
+                        { name: "changelogs/unreleased/{deploy}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{deploy}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                }
+            ]
+        },
+        multi_agent: {
+            title: "Multi-Agent / Collab.",
+            desc: "CoordenaÃ§Ã£o de mÃºltiplos agentes especializados trabalhando em paralelo.",
+            steps: [
+                {
+                    phase: "Fase 1: OrquestraÃ§Ã£o",
+                    action: "A IA carrega as regras de coordenaÃ§Ã£o multi-agente e verifica sessÃµes ativas.",
+                    files: [
+                        { name: "AGENTS.md Â§Multi-Agent", mode: "Leitura (R)", color: "border-secondary text-secondary" },
+                        { name: "Plans/in_progress/", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 2: AlocaÃ§Ã£o",
+                    action: "Leitura dos journals de agentes para entender o estado atual.",
+                    files: [
+                        { name: "wiki/agents/ (journals)", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 3: Plano de CoordenaÃ§Ã£o",
+                    action: "CriaÃ§Ã£o do plano de divisÃ£o de tarefas entre agentes.",
+                    files: [
+                        { name: "Plans/pending/{multi}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 4: ExecuÃ§Ã£o Paralela",
+                    action: "MÃºltiplos agentes executam tarefas em paralelo com coordenaÃ§Ã£o.",
+                    files: [
+                        { name: "Plans/in_progress/{multi}.md", mode: "Escrita (W)", color: "border-primary text-primary" },
+                        { name: "Tarefas DistribuÃ­das", mode: "Escrita (W)", color: "border-primary text-primary" }
+                    ]
+                },
+                {
+                    phase: "Fase 5: IntegraÃ§Ã£o",
+                    action: "ValidaÃ§Ã£o de consistÃªncia entre as contribuiÃ§Ãµes dos agentes.",
+                    files: [
+                        { name: "skills/governance-validator", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
+                    ]
+                },
+                {
+                    phase: "Fase 6: Registro",
+                    action: "Changelog consolidado e sÃ­ntese multi-agente.",
+                    files: [
+                        { name: "changelogs/unreleased/{multi}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{multi}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                }
+            ]
+        },
+        git_commit: {
+            title: "Git / Commit / Tag",
+            desc: "PadronizaÃ§Ã£o de commits, branches e tags seguindo conventional commits.",
+            steps: [
+                {
+                    phase: "Fase 1: Skill",
+                    action: "A IA carrega a skill de git conventional commits sob demanda.",
+                    files: [
+                        { name: "skills/git-conventional-commits", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 2: Versionamento",
+                    action: "VerificaÃ§Ã£o das regras de versionamento e estado atual do repositÃ³rio.",
+                    files: [
+                        { name: "FCVW/VERSIONING.md", mode: "Leitura (R)", color: "border-secondary text-secondary" }
+                    ]
+                },
+                {
+                    phase: "Fase 3: Plano de Commits",
+                    action: "OrganizaÃ§Ã£o dos commits seguindo o padrÃ£o conventional commits.",
+                    files: [
+                        { name: "task.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 4: ExecuÃ§Ã£o",
+                    action: "CriaÃ§Ã£o dos commits e tags seguindo o padrÃ£o estabelecido.",
+                    files: [
+                        { name: "git commit -m \"feat|fix|...\"", mode: "Escrita (W)", color: "border-primary text-primary" },
+                        { name: "git tag vx.y.z", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
+                    ]
+                },
+                {
+                    phase: "Fase 5: ValidaÃ§Ã£o",
+                    action: "VerificaÃ§Ã£o da consistÃªncia dos commits e tags.",
+                    files: [
+                        { name: "git log --oneline", mode: "ValidaÃ§Ã£o (V)", color: "border-error text-error" }
+                    ]
+                },
+                {
+                    phase: "Fase 6: Registro",
+                    action: "SÃ­ntese da sessÃ£o de versionamento.",
+                    files: [
+                        { name: "changelogs/unreleased/{git}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CriaÃ§Ã£o (C)", color: "border-tertiary text-tertiary" }
                     ]
                 }
             ]
@@ -987,72 +1546,72 @@ const scenarioData = {
     es: {
         bugfix: {
             title: "Bugfix / Troubleshooting",
-            desc: "Procedimiento sistemático para diagnosticar problemas e implementar soluciones sin introducir regresiones.",
+            desc: "Procedimiento sistemÃ¡tico para diagnosticar problemas e implementar soluciones sin introducir regresiones.",
             steps: [
                 {
-                    phase: "Fase 1: Ingestión de Contexto",
-                    action: "La IA lee las directivas fundamentales de la raíz para entender las limitaciones.",
+                    phase: "Fase 1: IngestiÃ³n de Contexto",
+                    action: "La IA lee las directivas fundamentales de la raÃ­z para entender las limitaciones.",
                     files: [{ name: "AGENTS.md", mode: "Lectura (R)", color: "border-secondary text-secondary" }]
                 },
                 {
-                    phase: "Fase 2: Sincronización de Memoria",
-                    action: "La IA busca reglas de diagnóstico y recupera resúmenes de sesiones anteriores.",
+                    phase: "Fase 2: SincronizaciÃ³n de Memoria",
+                    action: "La IA busca reglas de diagnÃ³stico y recupera resÃºmenes de sesiones anteriores.",
                     files: [
                         { name: "FCVW/TROUBLESHOOTING.md", mode: "Lectura (R)", color: "border-secondary text-secondary" },
-                        { name: "wiki/sessions/ (últimas)", mode: "Lectura (R)", color: "border-secondary text-secondary" }
+                        { name: "wiki/sessions/ (Ãºltimas)", mode: "Lectura (R)", color: "border-secondary text-secondary" }
                     ]
                 },
                 {
-                    phase: "Fase 3: Elaboración del Plan",
-                    action: "Antes de escribir código, se crea un plan de corrección y se inicia el checklist de tareas.",
+                    phase: "Fase 3: ElaboraciÃ³n del Plan",
+                    action: "Antes de escribir cÃ³digo, se crea un plan de correcciÃ³n y se inicia el checklist de tareas.",
                     files: [
-                        { name: "Plans/pending/{bugfix}.md", mode: "Creación (C)", color: "border-tertiary text-tertiary" },
-                        { name: "task.md", mode: "Creación (C)", color: "border-tertiary text-tertiary" }
+                        { name: "Plans/pending/{bugfix}.md", mode: "CreaciÃ³n (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CreaciÃ³n (C)", color: "border-tertiary text-tertiary" }
                     ]
                 },
                 {
-                    phase: "Fase 4: Ejecución",
-                    action: "La IA implementa la solución alterando los archivos afectados y actualiza task.md.",
+                    phase: "Fase 4: EjecuciÃ³n",
+                    action: "La IA implementa la soluciÃ³n alterando los archivos afectados y actualiza task.md.",
                     files: [
                         { name: "Plans/in_progress/{bugfix}.md", mode: "Escritura (W)", color: "border-primary text-primary" },
-                        { name: "Código de la Aplicación", mode: "Escritura (W)", color: "border-primary text-primary" },
+                        { name: "CÃ³digo de la AplicaciÃ³n", mode: "Escritura (W)", color: "border-primary text-primary" },
                         { name: "task.md", mode: "Escritura (W)", color: "border-primary text-primary" }
                     ]
                 },
                 {
-                    phase: "Fase 5: Validación",
-                    action: "Se ejecutan las pruebas físicas para confirmar que el bug ha sido erradicado.",
+                    phase: "Fase 5: ValidaciÃ³n",
+                    action: "Se ejecutan las pruebas fÃ­sicas para confirmar que el bug ha sido erradicado.",
                     files: [
                         { name: "FCVW/TESTS.md", mode: "Lectura (R)", color: "border-secondary text-secondary" },
-                        { name: "Suites de Pruebas", mode: "Validación (V)", color: "border-error text-error" }
+                        { name: "Suites de Pruebas", mode: "ValidaciÃ³n (V)", color: "border-error text-error" }
                     ]
                 },
                 {
                     phase: "Fase 6: Registro y Cierre",
-                    action: "Se crea un fragmento de changelog, se archiva el plan y se genera la memoria de sesión.",
+                    action: "Se crea un fragmento de changelog, se archiva el plan y se genera la memoria de sesiÃ³n.",
                     files: [
-                        { name: "changelogs/unreleased/{bugfix}.md", mode: "Creación (C)", color: "border-tertiary text-tertiary" },
-                        { name: "Plans/completed/{bugfix}.md", mode: "Creación (C)", color: "border-tertiary text-tertiary" },
-                        { name: "wiki/sessions/{session}.md", mode: "Creación (C)", color: "border-tertiary text-tertiary" }
+                        { name: "changelogs/unreleased/{bugfix}.md", mode: "CreaciÃ³n (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{bugfix}.md", mode: "CreaciÃ³n (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CreaciÃ³n (C)", color: "border-tertiary text-tertiary" }
                     ]
                 }
             ]
         },
         new_feature: {
             title: "Nueva Feature",
-            desc: "Adición controlada de nuevas funciones respetando el alcance y la guía declarativa de diseño.",
+            desc: "AdiciÃ³n controlada de nuevas funciones respetando el alcance y la guÃ­a declarativa de diseÃ±o.",
             steps: [
                 {
-                    phase: "Fase 1: Ingestión",
-                    action: "Verificación de las reglas fundamentales y los principios del manifiesto del proyecto.",
+                    phase: "Fase 1: IngestiÃ³n",
+                    action: "VerificaciÃ³n de las reglas fundamentales y los principios del manifiesto del proyecto.",
                     files: [
                         { name: "AGENTS.md", mode: "Lectura (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/MANIFEST.md", mode: "Lectura (R)", color: "border-secondary text-secondary" }
                     ]
                 },
                 {
-                    phase: "Fase 2: Escopo y Diseño",
-                    action: "Análisis de los límites del escopo y mapeo de tokens visuales en DESIGN.md.",
+                    phase: "Fase 2: Escopo y DiseÃ±o",
+                    action: "AnÃ¡lisis de los lÃ­mites del escopo y mapeo de tokens visuales en DESIGN.md.",
                     files: [
                         { name: "FCVW/SCOPE.md", mode: "Lectura (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/DESIGN.md", mode: "Lectura (R)", color: "border-secondary text-secondary" }
@@ -1062,35 +1621,35 @@ const scenarioData = {
                     phase: "Fase 3: Plan de Feature",
                     action: "Se genera el plan estructural que detalla los cambios y el checklist de tareas.",
                     files: [
-                        { name: "Plans/pending/{feature}.md", mode: "Creación (C)", color: "border-tertiary text-tertiary" },
-                        { name: "task.md", mode: "Creación (C)", color: "border-tertiary text-tertiary" }
+                        { name: "Plans/pending/{feature}.md", mode: "CreaciÃ³n (C)", color: "border-tertiary text-tertiary" },
+                        { name: "task.md", mode: "CreaciÃ³n (C)", color: "border-tertiary text-tertiary" }
                     ]
                 },
                 {
                     phase: "Fase 4: Desarrollo",
-                    action: "La IA escribe componentes y lógica en los directorios correspondientes.",
+                    action: "La IA escribe componentes y lÃ³gica en los directorios correspondientes.",
                     files: [
                         { name: "Plans/in_progress/{feature}.md", mode: "Escritura (W)", color: "border-primary text-primary" },
-                        { name: "Nuevos Archivos de Código", mode: "Creación (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Nuevos Archivos de CÃ³digo", mode: "CreaciÃ³n (C)", color: "border-tertiary text-tertiary" },
                         { name: "task.md", mode: "Escritura (W)", color: "border-primary text-primary" }
                     ]
                 },
                 {
                     phase: "Fase 5: Pruebas y Seguridad",
-                    action: "Validación del código y escaneo de vulnerabilidades/credenciales expuestas.",
+                    action: "ValidaciÃ³n del cÃ³digo y escaneo de vulnerabilidades/credenciales expuestas.",
                     files: [
                         { name: "FCVW/TESTS.md", mode: "Lectura (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/SECURITY.md", mode: "Lectura (R)", color: "border-secondary text-secondary" },
-                        { name: "Linter & Tests", mode: "Validación (V)", color: "border-error text-error" }
+                        { name: "Linter & Tests", mode: "ValidaciÃ³n (V)", color: "border-error text-error" }
                     ]
                 },
                 {
                     phase: "Fase 6: Registro",
-                    action: "Se genera el changelog fragmentado, se completa el plan y se resume la sesión.",
+                    action: "Se genera el changelog fragmentado, se completa el plan y se resume la sesiÃ³n.",
                     files: [
-                        { name: "changelogs/unreleased/{feature}.md", mode: "Creación (C)", color: "border-tertiary text-tertiary" },
-                        { name: "Plans/completed/{feature}.md", mode: "Creación (C)", color: "border-tertiary text-tertiary" },
-                        { name: "wiki/sessions/{session}.md", mode: "Creación (C)", color: "border-tertiary text-tertiary" }
+                        { name: "changelogs/unreleased/{feature}.md", mode: "CreaciÃ³n (C)", color: "border-tertiary text-tertiary" },
+                        { name: "Plans/completed/{feature}.md", mode: "CreaciÃ³n (C)", color: "border-tertiary text-tertiary" },
+                        { name: "wiki/sessions/{session}.md", mode: "CreaciÃ³n (C)", color: "border-tertiary text-tertiary" }
                     ]
                 }
             ]
@@ -1111,7 +1670,7 @@ const scenarioData = {
                 },
                 {
                     phase: "Phase 2: Speicherabgleich",
-                    action: "Die KI sucht nach bekannten Lösungsmodellen und stellt den Kontext der letzten Sitzungen wieder her.",
+                    action: "Die KI sucht nach bekannten LÃ¶sungsmodellen und stellt den Kontext der letzten Sitzungen wieder her.",
                     files: [
                         { name: "FCVW/TROUBLESHOOTING.md", mode: "Lesen (R)", color: "border-secondary text-secondary" },
                         { name: "wiki/sessions/ (letzte)", mode: "Lesen (R)", color: "border-secondary text-secondary" }
@@ -1119,7 +1678,7 @@ const scenarioData = {
                 },
                 {
                     phase: "Phase 3: Verbindliche Planung",
-                    action: "Vor dem Ändern des Codes erstellt die KI einen Plan mit Ursache, Risiko, Abnahmekriterien und Aufgaben.",
+                    action: "Vor dem Ã„ndern des Codes erstellt die KI einen Plan mit Ursache, Risiko, Abnahmekriterien und Aufgaben.",
                     files: [
                         { name: "Plans/pending/{bugfix}.md", mode: "Erstellen (C)", color: "border-tertiary text-tertiary" },
                         { name: "task.md", mode: "Erstellen (C)", color: "border-tertiary text-tertiary" }
@@ -1127,7 +1686,7 @@ const scenarioData = {
                 },
                 {
                     phase: "Phase 4: Fehlerbehebung",
-                    action: "Der Plan wird gestartet, und die fehlerhaften Dateien in der Anwendung werden gezielt geändert.",
+                    action: "Der Plan wird gestartet, und die fehlerhaften Dateien in der Anwendung werden gezielt geÃ¤ndert.",
                     files: [
                         { name: "Plans/in_progress/{bugfix}.md", mode: "Schreiben (W)", color: "border-primary text-primary" },
                         { name: "Anwendungscode", mode: "Schreiben (W)", color: "border-primary text-primary" },
@@ -1136,7 +1695,7 @@ const scenarioData = {
                 },
                 {
                     phase: "Phase 5: Tests und Verifizierung",
-                    action: "Die KI führt Tests im Terminal aus, um die Fehlerbehebung zu validieren.",
+                    action: "Die KI fÃ¼hrt Tests im Terminal aus, um die Fehlerbehebung zu validieren.",
                     files: [
                         { name: "FCVW/TESTS.md", mode: "Lesen (R)", color: "border-secondary text-secondary" },
                         { name: "Testsuite (Terminal)", mode: "Validieren (V)", color: "border-error text-error" }
@@ -1159,7 +1718,7 @@ const scenarioData = {
             steps: [
                 {
                     phase: "Phase 1: Aufnahme und Abgleich",
-                    action: "Die KI prüft Betriebsanweisungen und Kernprinzipien des Projektmanifests.",
+                    action: "Die KI prÃ¼ft Betriebsanweisungen und Kernprinzipien des Projektmanifests.",
                     files: [
                         { name: "AGENTS.md", mode: "Lesen (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/MANIFEST.md", mode: "Lesen (R)", color: "border-secondary text-secondary" }
@@ -1167,7 +1726,7 @@ const scenarioData = {
                 },
                 {
                     phase: "Phase 2: Systemgrenzen und Design",
-                    action: "Die KI prüft die zulässigen Grenzen im Scope und liest Designtokens in DESIGN.md.",
+                    action: "Die KI prÃ¼ft die zulÃ¤ssigen Grenzen im Scope und liest Designtokens in DESIGN.md.",
                     files: [
                         { name: "FCVW/SCOPE.md", mode: "Lesen (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/DESIGN.md", mode: "Lesen (R)", color: "border-secondary text-secondary" }
@@ -1191,8 +1750,8 @@ const scenarioData = {
                     ]
                 },
                 {
-                    phase: "Phase 5: Qualitätssicherung",
-                    action: "Durchführung von Tests und Sicherheitsprüfungen zur Vermeidung von Datenlecks.",
+                    phase: "Phase 5: QualitÃ¤tssicherung",
+                    action: "DurchfÃ¼hrung von Tests und SicherheitsprÃ¼fungen zur Vermeidung von Datenlecks.",
                     files: [
                         { name: "FCVW/TESTS.md", mode: "Lesen (R)", color: "border-secondary text-secondary" },
                         { name: "FCVW/SECURITY.md", mode: "Lesen (R)", color: "border-secondary text-secondary" },
@@ -1218,15 +1777,15 @@ const scenarioData = {
 
 // Fill matching language structures for missing items in ES/DE fallback
 for (const lang of ['es', 'de']) {
-    for (const key of ['refactoring', 'audit', 'instantiation']) {
+    for (const key of ['refactoring', 'audit', 'instantiation', 'ui_components', 'app_module_docs', 'release', 'retroactive', 'wiki_knowledge', 'pr_review', 'deploy_environment', 'multi_agent', 'git_commit']) {
         scenarioData[lang][key] = JSON.parse(JSON.stringify(scenarioData.en[key]));
         // Translate title
         if (key === 'refactoring') {
-            scenarioData[lang][key].title = lang === 'es' ? "Refactorización de Código" : "Code-Refactoring";
+            scenarioData[lang][key].title = lang === 'es' ? "RefactorizaciÃ³n de CÃ³digo" : "Code-Refactoring";
         } else if (key === 'audit') {
-            scenarioData[lang][key].title = lang === 'es' ? "Seguridad y Auditoría" : "Sicherheit & Audit";
+            scenarioData[lang][key].title = lang === 'es' ? "Seguridad y AuditorÃ­a" : "Sicherheit & Audit";
         } else {
-            scenarioData[lang][key].title = lang === 'es' ? "Instanciación de Proyecto" : "Projektinstanziierung";
+            scenarioData[lang][key].title = lang === 'es' ? "InstanciaciÃ³n de Proyecto" : "Projektinstanziierung";
         }
     }
 }
@@ -1295,9 +1854,9 @@ function updateScenarioDisplay() {
             let modeBadgeColor = 'bg-secondary/15 text-secondary border border-secondary/30';
             if (f.mode.includes('W') || f.mode.includes('Escrita')) {
                 modeBadgeColor = 'bg-primary/15 text-primary border border-primary/30';
-            } else if (f.mode.includes('C') || f.mode.includes('Criação')) {
+            } else if (f.mode.includes('C') || f.mode.includes('CriaÃ§Ã£o')) {
                 modeBadgeColor = 'bg-tertiary/15 text-tertiary border border-tertiary/30';
-            } else if (f.mode.includes('V') || f.mode.includes('Validação')) {
+            } else if (f.mode.includes('V') || f.mode.includes('ValidaÃ§Ã£o')) {
                 modeBadgeColor = 'bg-error/15 text-error border border-error/30';
             }
 
