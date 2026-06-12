@@ -179,6 +179,29 @@
     .pulse-coffee:hover {
         animation: none !important;
     }
+
+    /* Collapsible drawer styling via CSS Grid for smooth height animation */
+    .collapsible-drawer {
+        display: grid;
+        grid-template-rows: 0fr;
+        opacity: 0;
+        transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease, margin-top 0.3s ease, padding-top 0.3s ease;
+        overflow: hidden;
+    }
+    .collapsible-drawer.expanded {
+        grid-template-rows: 1fr;
+        opacity: 1;
+    }
+    .collapsible-drawer-content {
+        min-height: 0;
+    }
+    /* Horizontal hover shift for scenario selector menu items */
+    .scenario-select-btn {
+        transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease !important;
+    }
+    .scenario-select-btn:hover {
+        transform: translateX(4px);
+    }
 </style>
 </head>
 
@@ -371,7 +394,7 @@
     </div>
 
     <!-- Right Column: Interactive Graphic Pipeline -->
-    <div class="lg:col-span-8 flex flex-col gap-lg">
+    <div class="lg:col-span-8 flex flex-col gap-lg" id="pipeline-view-column">
       <div class="w-full rounded-xl flex flex-col shadow-2xl border border-outline-variant/30 overflow-hidden editor-window">
         <!-- macOS Window Header -->
         <div class="flex items-center justify-between px-md py-sm bg-surface-container-high/50 border-b border-outline-variant/30 shrink-0 select-none editor-header">
@@ -2412,8 +2435,10 @@ function updateScenarioDisplay() {
           </div>
           
           <!-- Collapsible Files Drawer -->
-          <div id="files-drawer-${idx}" class="files-drawer hidden w-full mt-md pt-sm border-t border-outline-variant/20 flex flex-wrap gap-2 transition-all duration-300">
-            ${fileBadges}
+          <div id="files-drawer-${idx}" class="collapsible-drawer border-t border-transparent w-full">
+            <div class="collapsible-drawer-content flex flex-wrap gap-2">
+              ${fileBadges}
+            </div>
           </div>
         `;
 
@@ -2427,14 +2452,19 @@ function updateScenarioDisplay() {
             const idx = btn.getAttribute('data-idx');
             const drawer = document.getElementById(`files-drawer-${idx}`);
             const icon = btn.querySelector('.material-symbols-outlined');
-            if (drawer.classList.contains('hidden')) {
-                drawer.classList.remove('hidden');
-                icon.textContent = 'folder_open';
-                btn.classList.add('border-primary', 'text-primary');
-            } else {
-                drawer.classList.add('hidden');
+            if (drawer.classList.contains('expanded')) {
+                drawer.classList.remove('expanded');
                 icon.textContent = 'folder';
                 btn.classList.remove('border-primary', 'text-primary');
+                setTimeout(() => {
+                    drawer.classList.add('border-transparent');
+                    drawer.classList.remove('border-outline-variant/20', 'mt-md', 'pt-sm');
+                }, 300);
+            } else {
+                drawer.classList.remove('border-transparent');
+                drawer.classList.add('border-outline-variant/20', 'mt-md', 'pt-sm', 'expanded');
+                icon.textContent = 'folder_open';
+                btn.classList.add('border-primary', 'text-primary');
             }
         });
     });
@@ -2468,6 +2498,14 @@ document.querySelectorAll('.scenario-select-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
         currentScenario = btn.getAttribute('data-scenario');
         updateScenarioDisplay();
+        
+        // Auto scroll on mobile/tablet viewports
+        if (window.innerWidth < 1024) {
+            const viewCol = document.getElementById('pipeline-view-column');
+            if (viewCol) {
+                viewCol.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
     });
 });
 

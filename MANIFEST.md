@@ -17,7 +17,7 @@ This file centralizes the identity, state, main rules, and official documents of
 | Target Platform | `cross-platform (Windows / Linux / macOS)` |
 | Main Lead | `Hugo Araújo de Melo` |
 | Repository | `https://github.com/Sistema2D/FrameCode-VibeWork` |
-| Current Version | `V0.7.9` |
+| Current Version | `V0.7.11` |
 | Manifest Creation Date | `2026-05-15` |
 | Last Update | `2026-06-12` |
 | Project Status | `development` |
@@ -242,6 +242,8 @@ Use this section to record document or structural gaps in the project.
 | 2026-06-12 | `V0.7.7` | Fixed encoding mojibake, restored ASCII block page header, added 9 new pipeline scenarios, and implemented Mermaid diagram rendering in Markdown viewer modal. | Antigravity |
 | 2026-06-12 | `V0.7.8` | Corrected PR / Code Review sidebar button icon from invalid code_review to rate_review. | Antigravity |
 | 2026-06-12 | `V0.7.9` | Replaced raw ASCII block-art header title in index.html with a responsive SVG logo. | Antigravity |
+| 2026-06-12 | `V0.7.10` | Implemented responsiveness improvements and refined micro-animations (collapsible drawers, modal easing, backdrop blur). | Antigravity |
+| 2026-06-12 | `V0.7.11` | Replaced token estimates table in scenarios section with a responsive visual pipeline flowchart showing lido (read) and escrito (written) files. | Antigravity |
 
 
 ---

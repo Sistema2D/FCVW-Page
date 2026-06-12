@@ -304,6 +304,20 @@
         position: relative;
         z-index: 10;
     }
+
+    /* Premium modal transition and backdrop blur */
+    #md-viewer-modal {
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        transition: opacity 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease !important;
+    }
+    #md-viewer-modal.opacity-100 {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+    #md-viewer-modal .glass-card {
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease !important;
+    }
 </style>
 </head>
 
@@ -1046,25 +1060,330 @@
 <section id="scenarios" class="mb-xl">
   <h2 class="font-headline-lg text-headline-lg mb-2" data-i18n="scenarios_title">Comportamento da IA por Cenário</h2>
   <p class="text-on-surface-variant mb-lg" data-i18n="scenarios_subtitle">Cada tipo de sessão define quais documentos a IA carrega e qual comportamento é esperado.</p>
-  <div class="glass-card rounded-xl overflow-x-auto">
-    <table class="w-full text-left text-sm min-w-[700px]">
-      <thead>
-        <tr class="bg-surface-container-high/50 border-b border-outline-variant/30">
-          <th class="p-md font-label-md text-primary" data-i18n="scenarios_th_scenario">Cenário</th>
-          <th class="p-md font-label-md text-primary" data-i18n="scenarios_th_docs">Documentos Carregados</th>
-          <th class="p-md font-label-md text-primary" data-i18n="scenarios_th_behavior">Comportamento Esperado</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-outline-variant/20">
-        <tr class="scenario-row"><td class="p-md font-semibold" data-i18n="scenario1_name">Bugfix / Troubleshooting</td><td class="p-md text-on-surface-variant font-label-md text-xs">AGENTS.md + TROUBLESHOOTING.md + PLANNING.md</td><td class="p-md text-right text-on-surface-variant">~5.000</td><td class="p-md text-right text-secondary">~1.200</td><td class="p-md text-right text-secondary font-bold">-76%</td></tr>
-        <tr class="scenario-row"><td class="p-md font-semibold" data-i18n="scenario2_name">Feature Nova</td><td class="p-md text-on-surface-variant font-label-md text-xs">AGENTS.md + SCOPE.md + PLANNING.md + DESIGN.md</td><td class="p-md text-right text-on-surface-variant">~7.000</td><td class="p-md text-right text-secondary">~1.500</td><td class="p-md text-right text-secondary font-bold">-78%</td></tr>
-        <tr class="scenario-row"><td class="p-md font-semibold" data-i18n="scenario3_name">UI / Componentes</td><td class="p-md text-on-surface-variant font-label-md text-xs">AGENTS.md + DESIGN.md</td><td class="p-md text-right text-on-surface-variant">~4.000</td><td class="p-md text-right text-secondary">~900</td><td class="p-md text-right text-secondary font-bold">-77%</td></tr>
-        <tr class="scenario-row"><td class="p-md font-semibold" data-i18n="scenario4_name">Refatoração</td><td class="p-md text-on-surface-variant font-label-md text-xs">AGENTS.md + REFACTORING.md + PLANNING.md</td><td class="p-md text-right text-on-surface-variant">~8.000</td><td class="p-md text-right text-secondary">~1.800</td><td class="p-md text-right text-secondary font-bold">-77%</td></tr>
-        <tr class="scenario-row"><td class="p-md font-semibold" data-i18n="scenario9_name">Instanciação Nova</td><td class="p-md text-on-surface-variant font-label-md text-xs">AGENTS.md + INSTANTIATION.md + BRIEFING.md + MANIFEST.md</td><td class="p-md text-right text-on-surface-variant">~8.500</td><td class="p-md text-right text-secondary">~2.000</td><td class="p-md text-right text-secondary font-bold">-76%</td></tr>
-        <tr class="scenario-row"><td class="p-md font-semibold" data-i18n="scenario10_name">Instanciação Retroativa</td><td class="p-md text-on-surface-variant font-label-md text-xs">AGENTS.md + RETROACTIVE_INSTANTIATION.md + CONTEXT_MAP.md</td><td class="p-md text-right text-on-surface-variant">~7.500</td><td class="p-md text-right text-secondary">~1.900</td><td class="p-md text-right text-secondary font-bold">-75%</td></tr>
-        <tr class="scenario-row"><td class="p-md font-semibold">Release</td><td class="p-md text-on-surface-variant font-label-md text-xs">CONTEXT_MAP.md + skill:release-checklist</td><td class="p-md text-right text-on-surface-variant">~2.500</td><td class="p-md text-right text-secondary">~600</td><td class="p-md text-right text-secondary font-bold">-76%</td></tr>
-      </tbody>
-    </table>
+  <div class="flex flex-col gap-6">
+    <!-- Card 1: Bugfix / Troubleshooting -->
+    <div class="glass-card rounded-xl p-6 flex flex-col gap-4 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
+      <div class="flex items-center gap-2 border-b border-outline-variant/20 pb-3">
+        <span class="material-symbols-outlined text-primary text-xl">bug_report</span>
+        <h3 class="font-semibold text-base" data-i18n="scenario1_name">Bugfix / Troubleshooting</h3>
+      </div>
+      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 relative">
+        <div class="flex-1 bg-surface-container-low/40 rounded-lg p-3 border border-outline-variant/10">
+          <div class="text-[10px] font-bold text-primary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+            <span data-i18n="flow_read">Lido</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">AGENTS.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">TROUBLESHOOTING.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">PLANNING.md</span>
+          </div>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-primary/5 rounded-lg p-3 border border-primary/10 flex flex-col justify-center min-h-[64px]">
+          <div class="text-[10px] font-bold text-primary mb-1.5 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">memory</span>
+            <span data-i18n="scenarios_th_behavior">Comportamento Esperado</span>
+          </div>
+          <p class="text-xs text-on-surface-variant font-label-md leading-relaxed" data-i18n="scenario1_behavior">Diagnosticar → Criar plano → Corrigir → Registrar changelog</p>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-secondary/5 rounded-lg p-3 border border-secondary/15">
+          <div class="text-[10px] font-bold text-secondary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">edit</span>
+            <span data-i18n="flow_write">Escrito</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">Plans/completed/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">changelogs/unreleased/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">wiki/sessions/...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Feature Nova -->
+    <div class="glass-card rounded-xl p-6 flex flex-col gap-4 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
+      <div class="flex items-center gap-2 border-b border-outline-variant/20 pb-3">
+        <span class="material-symbols-outlined text-primary text-xl">add_circle</span>
+        <h3 class="font-semibold text-base" data-i18n="scenario2_name">Feature Nova</h3>
+      </div>
+      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 relative">
+        <div class="flex-1 bg-surface-container-low/40 rounded-lg p-3 border border-outline-variant/10">
+          <div class="text-[10px] font-bold text-primary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+            <span data-i18n="flow_read">Lido</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">AGENTS.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">SCOPE.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">PLANNING.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">DESIGN.md</span>
+          </div>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-primary/5 rounded-lg p-3 border border-primary/10 flex flex-col justify-center min-h-[64px]">
+          <div class="text-[10px] font-bold text-primary mb-1.5 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">memory</span>
+            <span data-i18n="scenarios_th_behavior">Comportamento Esperado</span>
+          </div>
+          <p class="text-xs text-on-surface-variant font-label-md leading-relaxed" data-i18n="scenario2_behavior">Validar escopo → Blueprint → Implementar → Testar → Changelog</p>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-secondary/5 rounded-lg p-3 border border-secondary/15">
+          <div class="text-[10px] font-bold text-secondary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">edit</span>
+            <span data-i18n="flow_write">Escrito</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">Plans/completed/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">changelogs/unreleased/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">wiki/sessions/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">Código da Feature</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: UI / Componentes -->
+    <div class="glass-card rounded-xl p-6 flex flex-col gap-4 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
+      <div class="flex items-center gap-2 border-b border-outline-variant/20 pb-3">
+        <span class="material-symbols-outlined text-primary text-xl">palette</span>
+        <h3 class="font-semibold text-base" data-i18n="scenario3_name">UI / Componentes</h3>
+      </div>
+      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 relative">
+        <div class="flex-1 bg-surface-container-low/40 rounded-lg p-3 border border-outline-variant/10">
+          <div class="text-[10px] font-bold text-primary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+            <span data-i18n="flow_read">Lido</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">AGENTS.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">DESIGN.md</span>
+          </div>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-primary/5 rounded-lg p-3 border border-primary/10 flex flex-col justify-center min-h-[64px]">
+          <div class="text-[10px] font-bold text-primary mb-1.5 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">memory</span>
+            <span data-i18n="scenarios_th_behavior">Comportamento Esperado</span>
+          </div>
+          <p class="text-xs text-on-surface-variant font-label-md leading-relaxed" data-i18n="scenario3_behavior">Consultar tokens visuais → Gerar componente → Visual diff</p>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-secondary/5 rounded-lg p-3 border border-secondary/15">
+          <div class="text-[10px] font-bold text-secondary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">edit</span>
+            <span data-i18n="flow_write">Escrito</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">Plans/completed/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">changelogs/unreleased/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">wiki/sessions/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">Componentes UI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: Refatoração -->
+    <div class="glass-card rounded-xl p-6 flex flex-col gap-4 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
+      <div class="flex items-center gap-2 border-b border-outline-variant/20 pb-3">
+        <span class="material-symbols-outlined text-primary text-xl">cleaning_services</span>
+        <h3 class="font-semibold text-base" data-i18n="scenario4_name">Refatoração</h3>
+      </div>
+      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 relative">
+        <div class="flex-1 bg-surface-container-low/40 rounded-lg p-3 border border-outline-variant/10">
+          <div class="text-[10px] font-bold text-primary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+            <span data-i18n="flow_read">Lido</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">AGENTS.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">REFACTORING.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">PLANNING.md</span>
+          </div>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-primary/5 rounded-lg p-3 border border-primary/10 flex flex-col justify-center min-h-[64px]">
+          <div class="text-[10px] font-bold text-primary mb-1.5 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">memory</span>
+            <span data-i18n="scenarios_th_behavior">Comportamento Esperado</span>
+          </div>
+          <p class="text-xs text-on-surface-variant font-label-md leading-relaxed" data-i18n="scenario4_behavior">Inventário → Matriz de risco → Plano incremental → Testes → Rollback</p>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-secondary/5 rounded-lg p-3 border border-secondary/15">
+          <div class="text-[10px] font-bold text-secondary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">edit</span>
+            <span data-i18n="flow_write">Escrito</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">Plans/completed/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">changelogs/unreleased/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">wiki/sessions/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">Código Refatorado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5: Instanciação Nova -->
+    <div class="glass-card rounded-xl p-6 flex flex-col gap-4 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
+      <div class="flex items-center gap-2 border-b border-outline-variant/20 pb-3">
+        <span class="material-symbols-outlined text-primary text-xl">create_new_folder</span>
+        <h3 class="font-semibold text-base" data-i18n="scenario9_name">Novo Projeto</h3>
+      </div>
+      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 relative">
+        <div class="flex-1 bg-surface-container-low/40 rounded-lg p-3 border border-outline-variant/10">
+          <div class="text-[10px] font-bold text-primary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+            <span data-i18n="flow_read">Lido</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">AGENTS.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">INSTANTIATION.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">BRIEFING.md</span>
+          </div>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-primary/5 rounded-lg p-3 border border-primary/10 flex flex-col justify-center min-h-[64px]">
+          <div class="text-[10px] font-bold text-primary mb-1.5 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">memory</span>
+            <span data-i18n="scenarios_th_behavior">Comportamento Esperado</span>
+          </div>
+          <p class="text-xs text-on-surface-variant font-label-md leading-relaxed" data-i18n="scenario9_behavior">Fase 0 → Scaffold → Definir manifest, stack, scope</p>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-secondary/5 rounded-lg p-3 border border-secondary/15">
+          <div class="text-[10px] font-bold text-secondary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">edit</span>
+            <span data-i18n="flow_write">Escrito</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">MANIFEST.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">STACK.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">SCOPE.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">README.md (raiz)</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">Plans/completed/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">changelogs/unreleased/...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6: Instanciação Retroativa -->
+    <div class="glass-card rounded-xl p-6 flex flex-col gap-4 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
+      <div class="flex items-center gap-2 border-b border-outline-variant/20 pb-3">
+        <span class="material-symbols-outlined text-primary text-xl">settings_backup_restore</span>
+        <h3 class="font-semibold text-base" data-i18n="scenario10_name">Migração Retroativa</h3>
+      </div>
+      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 relative">
+        <div class="flex-1 bg-surface-container-low/40 rounded-lg p-3 border border-outline-variant/10">
+          <div class="text-[10px] font-bold text-primary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+            <span data-i18n="flow_read">Lido</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">AGENTS.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">RETROACTIVE_INSTANTIATION.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">CONTEXT_MAP.md</span>
+          </div>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-primary/5 rounded-lg p-3 border border-primary/10 flex flex-col justify-center min-h-[64px]">
+          <div class="text-[10px] font-bold text-primary mb-1.5 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">memory</span>
+            <span data-i18n="scenarios_th_behavior">Comportamento Esperado</span>
+          </div>
+          <p class="text-xs text-on-surface-variant font-label-md leading-relaxed" data-i18n="scenario10_behavior">Detectar estado → Defaults não-destrutivos → Reconciliar</p>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-secondary/5 rounded-lg p-3 border border-secondary/15">
+          <div class="text-[10px] font-bold text-secondary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">edit</span>
+            <span data-i18n="flow_write">Escrito</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">Plans/completed/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">changelogs/unreleased/...</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">Estrutura FCVW/*</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">wiki/sessions/...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7: Release -->
+    <div class="glass-card rounded-xl p-6 flex flex-col gap-4 border border-outline-variant/20 hover:border-primary/30 transition-all duration-300">
+      <div class="flex items-center gap-2 border-b border-outline-variant/20 pb-3">
+        <span class="material-symbols-outlined text-primary text-xl">inventory</span>
+        <h3 class="font-semibold text-base" data-i18n="scenario5_name">Release</h3>
+      </div>
+      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 relative">
+        <div class="flex-1 bg-surface-container-low/40 rounded-lg p-3 border border-outline-variant/10">
+          <div class="text-[10px] font-bold text-primary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+            <span data-i18n="flow_read">Lido</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">CONTEXT_MAP.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">changelogs/unreleased/</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">AUDIT.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">RELEASE.md</span>
+          </div>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-primary/5 rounded-lg p-3 border border-primary/10 flex flex-col justify-center min-h-[64px]">
+          <div class="text-[10px] font-bold text-primary mb-1.5 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">memory</span>
+            <span data-i18n="scenarios_th_behavior">Comportamento Esperado</span>
+          </div>
+          <p class="text-xs text-on-surface-variant font-label-md leading-relaxed" data-i18n="scenario5_behavior">Consolidar unreleased → Bump version → Tag → Publicar</p>
+        </div>
+        <div class="flex lg:flex-col items-center justify-center text-outline-variant shrink-0 py-1 lg:py-0">
+          <span class="material-symbols-outlined text-base lg:rotate-0 rotate-90 text-primary opacity-60">east</span>
+        </div>
+        <div class="flex-1 bg-secondary/5 rounded-lg p-3 border border-secondary/15">
+          <div class="text-[10px] font-bold text-secondary mb-2 uppercase tracking-wider flex items-center gap-1">
+            <span class="material-symbols-outlined text-xs">edit</span>
+            <span data-i18n="flow_write">Escrito</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">MANIFEST.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">STACK.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">changelogs/Vx.y.z.md</span>
+            <span class="px-2 py-0.5 bg-surface-container-high text-xs rounded font-mono border border-outline-variant/20 text-on-surface">wiki/releases/...</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -2217,7 +2536,7 @@ SOFTWARE.</pre>
 <!-- ═══════════════════════════════════════════════ -->
 <!-- MARKDOWN VIEWER MODAL                           -->
 <!-- ═══════════════════════════════════════════════ -->
-<div id="md-viewer-modal" class="fixed inset-0 bg-background/80 backdrop-blur-md z-[100] hidden items-center justify-center p-4 transition-opacity duration-300 opacity-0">
+<div id="md-viewer-modal" class="fixed inset-0 bg-background/80 z-[100] hidden items-center justify-center p-4 transition-opacity duration-300 opacity-0">
   <!-- Apple Code-Like Window -->
   <div class="glass-card w-full max-w-4xl h-[80vh] rounded-xl flex flex-col shadow-2xl border border-outline-variant/30 transform scale-95 transition-transform duration-300 overflow-hidden editor-window">
     <!-- Apple Window Header -->
@@ -2464,6 +2783,9 @@ const translations = {
         "scenarios_th_scenario": "Cenário",
         "scenarios_th_docs": "Documentos Carregados",
         "scenarios_th_behavior": "Comportamento Esperado",
+        "flow_read": "Lido",
+        "flow_write": "Escrito",
+        "scenario5_name": "Release",
         "scenario1_name": "Bugfix / Troubleshooting",
         "scenario1_behavior": "Diagnosticar → Criar plano → Corrigir → Registrar changelog",
         "scenario2_name": "Feature Nova",
@@ -2841,6 +3163,9 @@ const translations = {
         "scenarios_th_scenario": "Scenario",
         "scenarios_th_docs": "Loaded Documents",
         "scenarios_th_behavior": "Expected Behavior",
+        "flow_read": "Read",
+        "flow_write": "Written",
+        "scenario5_name": "Release",
         "scenario1_name": "Bugfix / Troubleshooting",
         "scenario1_behavior": "Diagnose → Create plan → Fix → Record changelog",
         "scenario2_name": "New Feature",
@@ -3218,6 +3543,9 @@ const translations = {
         "scenarios_th_scenario": "Escenario",
         "scenarios_th_docs": "Documentos Cargados",
         "scenarios_th_behavior": "Comportamiento Esperado",
+        "flow_read": "Leído",
+        "flow_write": "Escrito",
+        "scenario5_name": "Lanzamiento",
         "scenario1_name": "Bugfix / Troubleshooting",
         "scenario1_behavior": "Diagnosticar → Crear plan → Corregir → Registrar changelog",
         "scenario2_name": "Feature Nueva",
@@ -3595,6 +3923,9 @@ const translations = {
         "scenarios_th_scenario": "Szenario",
         "scenarios_th_docs": "Geladene Dokumente",
         "scenarios_th_behavior": "Erwartetes Verhalten",
+        "flow_read": "Gelesen",
+        "flow_write": "Geschrieben",
+        "scenario5_name": "Release",
         "scenario1_name": "Bugfix / Fehlerbehebung",
         "scenario1_behavior": "Diagnostizieren → Plan erstellen → Beheben → Changelog aufzeichnen",
         "scenario2_name": "Neues Feature",
